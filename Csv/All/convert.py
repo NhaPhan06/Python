@@ -29,4 +29,7 @@ def location_units(file_path, country_id, type_unit):
                     "country_id": country_id,
                     "parent_id": row["parent_id"].strip(),
                 })
+
+
+            print(units)
     return units
