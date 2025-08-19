@@ -13,7 +13,7 @@ location_units_9 = location_units("US.csv", "53aa936f-cead-427c-93a1-952cfe3f913
 
 #location_units = location_units_1 + location_units_2 + location_units_3 + location_units_4 + location_units_5 + location_units_6 + location_units_7
  
-location_units = location_units_8 + location_units_9
+location_units = location_units_9
 
 conn = psycopg2.connect(
     host="14.225.218.96",
@@ -23,9 +23,10 @@ conn = psycopg2.connect(
     password="Admin@123"
 )
 cur = conn.cursor()
-
+i= 1
 for unit in location_units:
-    print(unit)
+    print(i)
+    i+=1
     cur.execute("""
         INSERT INTO location_unit (id, name, type, country_id, parent_id)
         VALUES (%s, %s, %s, %s, %s)
