@@ -1,0 +1,4621 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=10.20.10.107;Initial Catalog=HOANMY_SAIGON_HIS;Connect Timeout=300</ConnectString>
+        <Prompt>Specify a user name and password for data source DataSource1:</Prompt>
+      </ConnectionProperties>
+      <rd:SecurityType>DataBase</rd:SecurityType>
+      <rd:DataSourceID>4b799b9b-a03a-4daf-b925-c0ceed9b2e50</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet2">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@MABENHVIEN">
+            <Value>=Parameters!MABENHVIEN.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@BENHAN_ID">
+            <Value>=Parameters!BENHAN_ID.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@TIEPNHAN_ID">
+            <Value>=Parameters!TIEPNHAN_ID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>SMR17P00801_BA_YHCTNGOAITRU_MAT2</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="BENHAN_ID1">
+          <DataField>BENHAN_ID1</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SOLUUTRU">
+          <DataField>SOLUUTRU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAYTE">
+          <DataField>MAYTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TENPHONGBAN">
+          <DataField>TENPHONGBAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAGIUONG">
+          <DataField>MAGIUONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TENBENHNHAN">
+          <DataField>TENBENHNHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGAYSINH">
+          <DataField>NGAYSINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TUOI">
+          <DataField>TUOI</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="GIOITINH">
+          <DataField>GIOITINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGHENGHIEP_ID">
+          <DataField>NGHENGHIEP_ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGHENGHIEP">
+          <DataField>NGHENGHIEP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DANTOC_ID">
+          <DataField>DANTOC_ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DANTOC">
+          <DataField>DANTOC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="QUOCTICH_ID">
+          <DataField>QUOCTICH_ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="QUOCTICH">
+          <DataField>QUOCTICH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGOAIKIEU">
+          <DataField>NGOAIKIEU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DIACHI">
+          <DataField>DIACHI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="QUANHUYEN_ID">
+          <DataField>QUANHUYEN_ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="QUANHUYEN_TEN">
+          <DataField>QUANHUYEN_TEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TINHTHANH_ID">
+          <DataField>TINHTHANH_ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TINHTHANH_TEN">
+          <DataField>TINHTHANH_TEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NOILAMVIEC">
+          <DataField>NOILAMVIEC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VIENPHI">
+          <DataField>VIENPHI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BHYT">
+          <DataField>BHYT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MIENGIAM">
+          <DataField>MIENGIAM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DTKHAC">
+          <DataField>DTKHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TENDOITUONG">
+          <DataField>TENDOITUONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BHYTDENNGAY">
+          <DataField>BHYTDENNGAY</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="SOBHYT">
+          <DataField>SOBHYT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUOILIENHE">
+          <DataField>NGUOILIENHE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DIENTHOAILIENHE">
+          <DataField>DIENTHOAILIENHE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THOIGIANVAOVIEN">
+          <DataField>THOIGIANVAOVIEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KHOACC">
+          <DataField>KHOACC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KHOAKB">
+          <DataField>KHOAKB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KHOADT">
+          <DataField>KHOADT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TUDEN">
+          <DataField>TUDEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GIOITHIEUYTE">
+          <DataField>GIOITHIEUYTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KHAC">
+          <DataField>KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LANVAOVIEN">
+          <DataField>LANVAOVIEN</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="KHOAVAO">
+          <DataField>KHOAVAO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THOIGIANVAOKHOA">
+          <DataField>THOIGIANVAOKHOA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHUYENKHOA_ID">
+          <DataField>CHUYENKHOA_ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CHUYENKHOA">
+          <DataField>CHUYENKHOA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MA_PBCK1">
+          <DataField>MA_PBCK1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THOIGIANCHUYENKHOA1">
+          <DataField>THOIGIANCHUYENKHOA1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MA_PBCK2">
+          <DataField>MA_PBCK2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THOIGIANCHUYENKHOA2">
+          <DataField>THOIGIANCHUYENKHOA2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HINHTHUCCHUYENVIEN">
+          <DataField>HINHTHUCCHUYENVIEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHUYENDENDENHVIEN">
+          <DataField>CHUYENDENDENHVIEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THOIGIANRAVIEN">
+          <DataField>THOIGIANRAVIEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGAYRAVIEN">
+          <DataField>NGAYRAVIEN</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="NGAYVAOVIEN">
+          <DataField>NGAYVAOVIEN</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="RAVIEN">
+          <DataField>RAVIEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="XINVE">
+          <DataField>XINVE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BOVE">
+          <DataField>BOVE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DUAVE">
+          <DataField>DUAVE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SONGAYDIEUTRI">
+          <DataField>SONGAYDIEUTRI</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="ICD_NOICHUYENDEN">
+          <DataField>ICD_NOICHUYENDEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAICD_NOICHUYENDEN">
+          <DataField>MAICD_NOICHUYENDEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ICD_KHAMBENH">
+          <DataField>ICD_KHAMBENH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAICD_KHAMBENH">
+          <DataField>MAICD_KHAMBENH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ICD_VAOKHOA">
+          <DataField>ICD_VAOKHOA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAICD_VAOKHOA">
+          <DataField>MAICD_VAOKHOA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TENICD_PHU_VAOKHOA">
+          <DataField>TENICD_PHU_VAOKHOA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAICD_PHU_VAOKHOA1">
+          <DataField>MAICD_PHU_VAOKHOA1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAICD_PHU_VAOKHOA2">
+          <DataField>MAICD_PHU_VAOKHOA2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAICD_PHU_VAOKHOA3">
+          <DataField>MAICD_PHU_VAOKHOA3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TEN_BENHCHINH">
+          <DataField>TEN_BENHCHINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MA_BENHCHINH">
+          <DataField>MA_BENHCHINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TEN_BENHPHU">
+          <DataField>TEN_BENHPHU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MA_BENHPHU1">
+          <DataField>MA_BENHPHU1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MA_BENHPHU2">
+          <DataField>MA_BENHPHU2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ICD_U_NOICHUYENDEN">
+          <DataField>ICD_U_NOICHUYENDEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAICD_U_NOICHUYENDEN">
+          <DataField>MAICD_U_NOICHUYENDEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ICD_U_KHAMBENH">
+          <DataField>ICD_U_KHAMBENH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAICD_U_KHAMBENH">
+          <DataField>MAICD_U_KHAMBENH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ICD_U_VAOKHOA">
+          <DataField>ICD_U_VAOKHOA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAICD_U_VAOKHOA">
+          <DataField>MAICD_U_VAOKHOA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TENICD_U_PHU_VAOKHOA">
+          <DataField>TENICD_U_PHU_VAOKHOA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAICD_U_PHU_VAOKHOA1">
+          <DataField>MAICD_U_PHU_VAOKHOA1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAICD_U_PHU_VAOKHOA2">
+          <DataField>MAICD_U_PHU_VAOKHOA2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAICD_U_PHU_VAOKHOA3">
+          <DataField>MAICD_U_PHU_VAOKHOA3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TEN_U_BENHCHINH">
+          <DataField>TEN_U_BENHCHINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MA_U_BENHCHINH">
+          <DataField>MA_U_BENHCHINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TEN_U_BENHPHU">
+          <DataField>TEN_U_BENHPHU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MA_U_BENHPHU1">
+          <DataField>MA_U_BENHPHU1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MA_U_BENHPHU2">
+          <DataField>MA_U_BENHPHU2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHANDOANNOIGIOITHIEU">
+          <DataField>CHANDOANNOIGIOITHIEU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHANDOANKHOA">
+          <DataField>CHANDOANKHOA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHANDOANVAOKHOADIEUTRI">
+          <DataField>CHANDOANVAOKHOADIEUTRI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THUTHUAT">
+          <DataField>THUTHUAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PHAUTHUAT">
+          <DataField>PHAUTHUAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ICD_BENHCHINH">
+          <DataField>ICD_BENHCHINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ICD_BENHPHU">
+          <DataField>ICD_BENHPHU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TAIBIEN">
+          <DataField>TAIBIEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BIENCHUNG">
+          <DataField>BIENCHUNG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MA_NGUYENNHANTUVONG">
+          <DataField>MA_NGUYENNHANTUVONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TEN_NGUYENNHANTUVONG">
+          <DataField>TEN_NGUYENNHANTUVONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MA_CHANDOANGIAIPHAUTUTHI">
+          <DataField>MA_CHANDOANGIAIPHAUTUTHI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TEN_CHANDOANGIAIPHAUTUTHI">
+          <DataField>TEN_CHANDOANGIAIPHAUTUTHI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KHOI">
+          <DataField>KHOI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GIAM">
+          <DataField>GIAM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KTD">
+          <DataField>KTD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NANG">
+          <DataField>NANG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TUVONG">
+          <DataField>TUVONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LANHTINH">
+          <DataField>LANHTINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGHINGO">
+          <DataField>NGHINGO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ACTINH">
+          <DataField>ACTINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THOIGIANTUVONG">
+          <DataField>THOIGIANTUVONG</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DOBENH">
+          <DataField>DOBENH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DOTAIBIEN">
+          <DataField>DOTAIBIEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NNKHAC">
+          <DataField>NNKHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SAU24H">
+          <DataField>SAU24H</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TRONG24H">
+          <DataField>TRONG24H</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUYENNHANTUVONG">
+          <DataField>NGUYENNHANTUVONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KHAMNGHIEMTUTHI">
+          <DataField>KHAMNGHIEMTUTHI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHANDOANGIAIPHAUTUTHI">
+          <DataField>CHANDOANGIAIPHAUTUTHI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HOTEN_BS">
+          <DataField>HOTEN_BS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="QUATRINHBLVADIENBIENLS">
+          <DataField>QUATRINHBLVADIENBIENLS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="XNXQUANG">
+          <DataField>XNXQUANG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="XNTEBAO">
+          <DataField>XNTEBAO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="XNSIEUAM">
+          <DataField>XNSIEUAM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="XNMAU">
+          <DataField>XNMAU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="XNBLGP">
+          <DataField>XNBLGP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CACXNKHAC">
+          <DataField>CACXNKHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PHUONGPHAPDIEUTRI">
+          <DataField>PHUONGPHAPDIEUTRI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TINHTRANGNGUOIBENHRAVIEN">
+          <DataField>TINHTRANGNGUOIBENHRAVIEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HUONGDIEUTRIVACHEDOTIEPTHEO">
+          <DataField>HUONGDIEUTRIVACHEDOTIEPTHEO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SOTOXQUANG">
+          <DataField>SOTOXQUANG</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="SOTOCTSCANNER">
+          <DataField>SOTOCTSCANNER</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="SOTOSIEUAM">
+          <DataField>SOTOSIEUAM</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="SOTOXETNGHIEM">
+          <DataField>SOTOXETNGHIEM</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="SOTOKHAC">
+          <DataField>SOTOKHAC</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="SOTOHOSO">
+          <DataField>SOTOHOSO</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="CDRA_YHCT_ICDCHINH_TEXT">
+          <DataField>CDRA_YHCT_ICDCHINH_TEXT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CDRA_YHCT_ICDPHU_TEXT">
+          <DataField>CDRA_YHCT_ICDPHU_TEXT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CDRA_YHCT_ICDCHINH_MA">
+          <DataField>CDRA_YHCT_ICDCHINH_MA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CDRA_YHCT_ICDPHU_MA">
+          <DataField>CDRA_YHCT_ICDPHU_MA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BENHAN_ID">
+          <DataField>BENHAN_ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="LOAIBENHAN">
+          <DataField>LOAIBENHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUOITAOBA_ID">
+          <DataField>NGUOITAOBA_ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NGAYTAO">
+          <DataField>NGAYTAO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YHHD_CDVAOKHOA">
+          <DataField>YHHD_CDVAOKHOA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YHHD_ICDIDCHINH">
+          <DataField>YHHD_ICDIDCHINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YHHD_ICDCHINH">
+          <DataField>YHHD_ICDCHINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YHHD_ICDCHINH_TEXT">
+          <DataField>YHHD_ICDCHINH_TEXT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YHHD_ICDIDPHU">
+          <DataField>YHHD_ICDIDPHU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YHHD_ICDPHU">
+          <DataField>YHHD_ICDPHU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YHHD_ICDPHU_TEXT">
+          <DataField>YHHD_ICDPHU_TEXT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BATCUONG_BIEU">
+          <DataField>BATCUONG_BIEU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BATCUONG_LY">
+          <DataField>BATCUONG_LY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BATCUONG_HU">
+          <DataField>BATCUONG_HU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BATCUONG_THUC">
+          <DataField>BATCUONG_THUC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BATCUONG_HAN">
+          <DataField>BATCUONG_HAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BATCUONG_NHIET">
+          <DataField>BATCUONG_NHIET</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BATCUONG_AM">
+          <DataField>BATCUONG_AM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BATCUONG_DUONG">
+          <DataField>BATCUONG_DUONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TANGPHU_TAM">
+          <DataField>TANGPHU_TAM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TANGPHU_CAN">
+          <DataField>TANGPHU_CAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TANGPHU_TY">
+          <DataField>TANGPHU_TY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TANGPHU_PHE">
+          <DataField>TANGPHU_PHE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TANGPHU_TAMBAO">
+          <DataField>TANGPHU_TAMBAO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TANGPHU_THAN">
+          <DataField>TANGPHU_THAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TANGPHU_VI">
+          <DataField>TANGPHU_VI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TANGPHU_DOM">
+          <DataField>TANGPHU_DOM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TANGPHU_TIEUTRUONG">
+          <DataField>TANGPHU_TIEUTRUONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TANGPHU_DAITRANG">
+          <DataField>TANGPHU_DAITRANG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TANGPHU_BANGQUANG">
+          <DataField>TANGPHU_BANGQUANG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TANGPHU_TAMTIEU">
+          <DataField>TANGPHU_TAMTIEU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TANGPHU_PHUKY">
+          <DataField>TANGPHU_PHUKY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINHMACH_TAM">
+          <DataField>KINHMACH_TAM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINHMACH_CAN">
+          <DataField>KINHMACH_CAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINHMACH_TY">
+          <DataField>KINHMACH_TY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINHMACH_PHE">
+          <DataField>KINHMACH_PHE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINHMACH_THAN">
+          <DataField>KINHMACH_THAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINHMACH_VI">
+          <DataField>KINHMACH_VI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINHMACH_DAITRUONG">
+          <DataField>KINHMACH_DAITRUONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINHMACH_TIEUTRUONG">
+          <DataField>KINHMACH_TIEUTRUONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINHMACH_TAMBAOLAC">
+          <DataField>KINHMACH_TAMBAOLAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINHMACH_TAMTIEU">
+          <DataField>KINHMACH_TAMTIEU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINHMACH_DOM">
+          <DataField>KINHMACH_DOM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINHMACH_BANG">
+          <DataField>KINHMACH_BANG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINHMACH_MACH">
+          <DataField>KINHMACH_MACH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINHMACH_MACHNHAM">
+          <DataField>KINHMACH_MACHNHAM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DINHVI_DINH">
+          <DataField>DINHVI_DINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DINHVI_VE">
+          <DataField>DINHVI_VE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DINHVI_KHI">
+          <DataField>DINHVI_KHI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DINHVI_HUYET">
+          <DataField>DINHVI_HUYET</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NN_NOI">
+          <DataField>NN_NOI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NN_NGOAI">
+          <DataField>NN_NGOAI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NN_BATNOINGOAI">
+          <DataField>NN_BATNOINGOAI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YHCT_CDRAVIEN">
+          <DataField>YHCT_CDRAVIEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KQDT_KHOI">
+          <DataField>KQDT_KHOI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KQDT_DO">
+          <DataField>KQDT_DO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KQDT_NANGHON">
+          <DataField>KQDT_NANGHON</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KQDT_CHUYENVIEN">
+          <DataField>KQDT_CHUYENVIEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KQDT_TUVONG">
+          <DataField>KQDT_TUVONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KQDT_XINVE">
+          <DataField>KQDT_XINVE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NOITIET_DINHDUONG">
+          <DataField>NOITIET_DINHDUONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MOTACOQUANBENHLY">
+          <DataField>MOTACOQUANBENHLY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HINHTHAI_GAY">
+          <DataField>HINHTHAI_GAY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HINHTHAI_BEO">
+          <DataField>HINHTHAI_BEO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HINHTHAI_CANDOI">
+          <DataField>HINHTHAI_CANDOI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HINHTHAI_NAMCO">
+          <DataField>HINHTHAI_NAMCO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HINHTHAI_UATINH">
+          <DataField>HINHTHAI_UATINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HINHTHAI_NAMDUOI">
+          <DataField>HINHTHAI_NAMDUOI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HINHTHAI_HIEUDONG">
+          <DataField>HINHTHAI_HIEUDONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HINHTHAI_KHAC">
+          <DataField>HINHTHAI_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THAN_CONTHAN">
+          <DataField>THAN_CONTHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THAN_KHONGTHAN">
+          <DataField>THAN_KHONGTHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THAN_KHAC">
+          <DataField>THAN_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SAC_TRANG">
+          <DataField>SAC_TRANG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SAC_DO">
+          <DataField>SAC_DO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SAC_VANG">
+          <DataField>SAC_VANG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SAC_XANH">
+          <DataField>SAC_XANH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SAC_DEN">
+          <DataField>SAC_DEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SAC_BINH">
+          <DataField>SAC_BINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SAC_KHAC">
+          <DataField>SAC_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TRACH_TUOI">
+          <DataField>TRACH_TUOI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TRACH_KHO">
+          <DataField>TRACH_KHO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TRACH_KHAC">
+          <DataField>TRACH_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATLUOI_BT">
+          <DataField>CHATLUOI_BT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATLUOI_BEU">
+          <DataField>CHATLUOI_BEU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATLUOI_MONG">
+          <DataField>CHATLUOI_MONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATLUOI_NUT">
+          <DataField>CHATLUOI_NUT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATLUOI_CUNG">
+          <DataField>CHATLUOI_CUNG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATLUOI_LOET">
+          <DataField>CHATLUOI_LOET</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATLUOI_LECH">
+          <DataField>CHATLUOI_LECH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATLUOI_RUT">
+          <DataField>CHATLUOI_RUT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATLUOI_KHAC">
+          <DataField>CHATLUOI_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SACLUOI_HONG">
+          <DataField>SACLUOI_HONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SACLUOI_NHOT">
+          <DataField>SACLUOI_NHOT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SACLUOI_DO">
+          <DataField>SACLUOI_DO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SACLUOI_DOSAM">
+          <DataField>SACLUOI_DOSAM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SACLUOI_XANHTIM">
+          <DataField>SACLUOI_XANHTIM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SACLUOI_DAMU">
+          <DataField>SACLUOI_DAMU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SACLUOI_KHO">
+          <DataField>SACLUOI_KHO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SACLUOI_NHUAN">
+          <DataField>SACLUOI_NHUAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SACLUOI_KHAC">
+          <DataField>SACLUOI_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REULUOI_CO">
+          <DataField>REULUOI_CO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REULUOI_KHONG">
+          <DataField>REULUOI_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REULUOI_BONG">
+          <DataField>REULUOI_BONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REULUOI_DAY">
+          <DataField>REULUOI_DAY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REULUOI_MONG">
+          <DataField>REULUOI_MONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REULUOI_UOT">
+          <DataField>REULUOI_UOT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REULUOI_KHO">
+          <DataField>REULUOI_KHO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REULUOI_DINH">
+          <DataField>REULUOI_DINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REULUOI_TRANG">
+          <DataField>REULUOI_TRANG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REULUOI_VANG">
+          <DataField>REULUOI_VANG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REULUOI_DEN">
+          <DataField>REULUOI_DEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REULUOI_KHAC">
+          <DataField>REULUOI_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MOTAVONGCHAN">
+          <DataField>MOTAVONGCHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIENGNOI_BT">
+          <DataField>TIENGNOI_BT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIENGNOI_TO">
+          <DataField>TIENGNOI_TO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIENGNOI_NHO">
+          <DataField>TIENGNOI_NHO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIENGNOI_DUTQUANG">
+          <DataField>TIENGNOI_DUTQUANG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIENGNOI_KHAN">
+          <DataField>TIENGNOI_KHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIENGNOI_NGONG">
+          <DataField>TIENGNOI_NGONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIENGNOI_MAT">
+          <DataField>TIENGNOI_MAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIENGNOI_KHAC">
+          <DataField>TIENGNOI_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HOITHO_BT">
+          <DataField>HOITHO_BT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HOITHO_DUTQUANG">
+          <DataField>HOITHO_DUTQUANG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HOITHO_NGAN">
+          <DataField>HOITHO_NGAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HOITHO_MANH">
+          <DataField>HOITHO_MANH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HOITHO_YEU">
+          <DataField>HOITHO_YEU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HOITHO_THO">
+          <DataField>HOITHO_THO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HOITHO_RIT">
+          <DataField>HOITHO_RIT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HOITHO_KHOKHE">
+          <DataField>HOITHO_KHOKHE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HOITHO_CHAM">
+          <DataField>HOITHO_CHAM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HOITHO_GAP">
+          <DataField>HOITHO_GAP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HOITHO_KHAC">
+          <DataField>HOITHO_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HO_TEXT">
+          <DataField>HO_TEXT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HO_CO">
+          <DataField>HO_CO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HO_CO_TEXT">
+          <DataField>HO_CO_TEXT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HO_KHONG">
+          <DataField>HO_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HO_KHONG_TEXT">
+          <DataField>HO_KHONG_TEXT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HO_LIENTUC">
+          <DataField>HO_LIENTUC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HO_CON">
+          <DataField>HO_CON</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HO_IT">
+          <DataField>HO_IT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HO_NHIEU">
+          <DataField>HO_NHIEU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HO_KHAN">
+          <DataField>HO_KHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HO_CODOM">
+          <DataField>HO_CODOM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HO_KHAC">
+          <DataField>HO_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="O_CO">
+          <DataField>O_CO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="O_KHONG">
+          <DataField>O_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NAC_CO">
+          <DataField>NAC_CO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NAC_KHONG">
+          <DataField>NAC_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MUI_CO">
+          <DataField>MUI_CO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MUI_KHONG">
+          <DataField>MUI_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MUI_CHUA">
+          <DataField>MUI_CHUA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MUI_KHAM">
+          <DataField>MUI_KHAM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MUI_TANH">
+          <DataField>MUI_TANH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MUI_THOI">
+          <DataField>MUI_THOI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MUI_HOI">
+          <DataField>MUI_HOI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MUI_KHAC">
+          <DataField>MUI_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATTHAIBL_CO">
+          <DataField>CHATTHAIBL_CO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATTHAIBL_KHONG">
+          <DataField>CHATTHAIBL_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATTHAIBL_DOM">
+          <DataField>CHATTHAIBL_DOM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATTHAIBL_CHATNON">
+          <DataField>CHATTHAIBL_CHATNON</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATTHAIBL_PHAN">
+          <DataField>CHATTHAIBL_PHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATTHAIBL_NUOCTIEU">
+          <DataField>CHATTHAIBL_NUOCTIEU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATTHAIBL_KHIHU">
+          <DataField>CHATTHAIBL_KHIHU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATTHAIBL_KINH">
+          <DataField>CHATTHAIBL_KINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHATTHAIBL_KHAC">
+          <DataField>CHATTHAIBL_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MOTAVANCHAN">
+          <DataField>MOTAVANCHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HANNHIET_BT">
+          <DataField>HANNHIET_BT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HANNHIET_HAN">
+          <DataField>HANNHIET_HAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HANNHIET_NHIET">
+          <DataField>HANNHIET_NHIET</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HANNHIET_KHAC">
+          <DataField>HANNHIET_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HANNHIET_THICHNONG">
+          <DataField>HANNHIET_THICHNONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HANNHIET_SONONG">
+          <DataField>HANNHIET_SONONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HANNHIET_THICHMAT">
+          <DataField>HANNHIET_THICHMAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HANNHIET_SOLANH">
+          <DataField>HANNHIET_SOLANH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HANNHIET_TRONGNONG">
+          <DataField>HANNHIET_TRONGNONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HANNHIET_TRONGLANH">
+          <DataField>HANNHIET_TRONGLANH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HANNHIET_RETRUN">
+          <DataField>HANNHIET_RETRUN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HANNHIET_VANGLAI">
+          <DataField>HANNHIET_VANGLAI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HANNHIET_BHKHAC">
+          <DataField>HANNHIET_BHKHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MOHOI_BT">
+          <DataField>MOHOI_BT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MOHOI_KHONG">
+          <DataField>MOHOI_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MOHOI_TUHAN">
+          <DataField>MOHOI_TUHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MOHOI_DAOHAN">
+          <DataField>MOHOI_DAOHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MOHOI_NHIEU">
+          <DataField>MOHOI_NHIEU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MOHOI_IT">
+          <DataField>MOHOI_IT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MOHOI_KHAC">
+          <DataField>MOHOI_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAUMAT_CO">
+          <DataField>DAUMAT_CO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAUMAT_KHONG">
+          <DataField>DAUMAT_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAUDAU_1CHO">
+          <DataField>DAUDAU_1CHO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAUDAU_NUADAU">
+          <DataField>DAUDAU_NUADAU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAUDAU_CADAU">
+          <DataField>DAUDAU_CADAU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAUDAU_DICHUYEN">
+          <DataField>DAUDAU_DICHUYEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAUDAU_EAM">
+          <DataField>DAUDAU_EAM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAUDAU_NHOI">
+          <DataField>DAUDAU_NHOI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAUDAU_CANG">
+          <DataField>DAUDAU_CANG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAUDAU_NANG">
+          <DataField>DAUDAU_NANG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAT_HOAMAT">
+          <DataField>MAT_HOAMAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAT_NHINKHONGRO">
+          <DataField>MAT_NHINKHONGRO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TAI_U">
+          <DataField>TAI_U</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TAI_DIEC">
+          <DataField>TAI_DIEC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TAI_NANG">
+          <DataField>TAI_NANG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TAI_DAU">
+          <DataField>TAI_DAU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MUI_NGAT">
+          <DataField>MUI_NGAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MUI_CHAYNUOC">
+          <DataField>MUI_CHAYNUOC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MUI_CHAYMAUCAM">
+          <DataField>MUI_CHAYMAUCAM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MUI_DAU">
+          <DataField>MUI_DAU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HONG_DAU">
+          <DataField>HONG_DAU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HONG_KHO">
+          <DataField>HONG_KHO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COVAI_MOI">
+          <DataField>COVAI_MOI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COVAI_DAU">
+          <DataField>COVAI_DAU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COVAI_KHOVANDONG">
+          <DataField>COVAI_KHOVANDONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COVAI_KHAC">
+          <DataField>COVAI_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LUNGBL_CO">
+          <DataField>LUNGBL_CO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LUNGBL_KHONG">
+          <DataField>LUNGBL_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LUNGBL_DAU">
+          <DataField>LUNGBL_DAU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LUNGBL_KHOVANDONG">
+          <DataField>LUNGBL_KHOVANDONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LUNGBL_COCUNG">
+          <DataField>LUNGBL_COCUNG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LUNGBL_KHAC">
+          <DataField>LUNGBL_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUNGBL_CO">
+          <DataField>BUNGBL_CO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUNGBL_KHONG">
+          <DataField>BUNGBL_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUNGBL_TUC">
+          <DataField>BUNGBL_TUC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUNGBL_DAU">
+          <DataField>BUNGBL_DAU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUNGBL_SOI">
+          <DataField>BUNGBL_SOI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUNGBL_NONGRUOT">
+          <DataField>BUNGBL_NONGRUOT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUNGBL_DAY">
+          <DataField>BUNGBL_DAY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUC_KHOTHO">
+          <DataField>NGUC_KHOTHO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUC_TUC">
+          <DataField>NGUC_TUC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUC_BONCHON">
+          <DataField>NGUC_BONCHON</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUC_DANHTRONG">
+          <DataField>NGUC_DANHTRONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUC_KHAC">
+          <DataField>NGUC_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHANTAY_CO">
+          <DataField>CHANTAY_CO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHANTAY_KHONG">
+          <DataField>CHANTAY_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AN_CO">
+          <DataField>AN_CO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AN_KHONG">
+          <DataField>AN_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AN_THICHNONG">
+          <DataField>AN_THICHNONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AN_THICHMAT">
+          <DataField>AN_THICHMAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AN_NHIEU">
+          <DataField>AN_NHIEU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AN_IT">
+          <DataField>AN_IT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AN_DANGMIENG">
+          <DataField>AN_DANGMIENG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AN_NHATMIENG">
+          <DataField>AN_NHATMIENG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AN_THEMAN">
+          <DataField>AN_THEMAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AN_CHANAN">
+          <DataField>AN_CHANAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AN_BUNGCHUONG">
+          <DataField>AN_BUNGCHUONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AN_KHAC">
+          <DataField>AN_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UONG_CO">
+          <DataField>UONG_CO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UONG_KHONG">
+          <DataField>UONG_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UONG_MAT">
+          <DataField>UONG_MAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UONG_AMNONG">
+          <DataField>UONG_AMNONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UONG_NHIEU">
+          <DataField>UONG_NHIEU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UONG_IT">
+          <DataField>UONG_IT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UONG_KHAC">
+          <DataField>UONG_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAITIEUTIEN_CO">
+          <DataField>DAITIEUTIEN_CO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAITIEUTIEN_KHONG">
+          <DataField>DAITIEUTIEN_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIEUTIEN_VANG">
+          <DataField>TIEUTIEN_VANG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIEUTIEN_DO">
+          <DataField>TIEUTIEN_DO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIEUTIEN_DUC">
+          <DataField>TIEUTIEN_DUC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIEUTIEN_BUOT">
+          <DataField>TIEUTIEN_BUOT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIEUTIEN_DAT">
+          <DataField>TIEUTIEN_DAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIEUTIEN_KHONGTUCHU">
+          <DataField>TIEUTIEN_KHONGTUCHU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIEUTIEN_BI">
+          <DataField>TIEUTIEN_BI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIEUTIEN_KHAC">
+          <DataField>TIEUTIEN_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAITIEN_TAO">
+          <DataField>DAITIEN_TAO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAITIEN_NHAO">
+          <DataField>DAITIEN_NHAO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAITIEN_SONG">
+          <DataField>DAITIEN_SONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAITIEN_TOANNUOC">
+          <DataField>DAITIEN_TOANNUOC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAITIEN_NHAY">
+          <DataField>DAITIEN_NHAY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAITIEN_BI">
+          <DataField>DAITIEN_BI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DAITIEN_KHAC">
+          <DataField>DAITIEN_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGU_CO">
+          <DataField>NGU_CO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGU_KHONG">
+          <DataField>NGU_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGU_KHO">
+          <DataField>NGU_KHO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGU_HAYTINH">
+          <DataField>NGU_HAYTINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGU_DAYSOM">
+          <DataField>NGU_DAYSOM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGU_HAYMO">
+          <DataField>NGU_HAYMO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGU_KHAC">
+          <DataField>NGU_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINH_CO">
+          <DataField>KINH_CO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINH_KHONG">
+          <DataField>KINH_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINH_TRUOCKY">
+          <DataField>KINH_TRUOCKY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINH_SAUKY">
+          <DataField>KINH_SAUKY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINH_LUCTRUOCLUCSAU">
+          <DataField>KINH_LUCTRUOCLUCSAU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINH_TAC">
+          <DataField>KINH_TAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINH_KHAC">
+          <DataField>KINH_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINH_DAUTRUOCKY">
+          <DataField>KINH_DAUTRUOCKY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINH_DAUSAUKY">
+          <DataField>KINH_DAUSAUKY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KINH_DAUTRONGKY">
+          <DataField>KINH_DAUTRONGKY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THONGKINH_KHAC">
+          <DataField>THONGKINH_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DOIHA_VANG">
+          <DataField>DOIHA_VANG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DOIHA_TRANG">
+          <DataField>DOIHA_TRANG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DOIHA_HOI">
+          <DataField>DOIHA_HOI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DOIHA_HONG">
+          <DataField>DOIHA_HONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DOIHA_KHAC">
+          <DataField>DOIHA_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ROILOANSD_CO">
+          <DataField>ROILOANSD_CO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ROILOANSD_KHONG">
+          <DataField>ROILOANSD_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ROILOANSDNAM_YEU">
+          <DataField>ROILOANSDNAM_YEU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ROILOANSDNAM_LIETDUONG">
+          <DataField>ROILOANSDNAM_LIETDUONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ROILOANSDNAM_DITINH">
+          <DataField>ROILOANSDNAM_DITINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ROILOANSDNAM_HOATTINH">
+          <DataField>ROILOANSDNAM_HOATTINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ROILOANSDNAM_MONGTINH">
+          <DataField>ROILOANSDNAM_MONGTINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ROILOANSDNAM_LANHTINH">
+          <DataField>ROILOANSDNAM_LANHTINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ROILOANSDNU_KHONGTHUTHAI">
+          <DataField>ROILOANSDNU_KHONGTHUTHAI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ROILOANSDNU_SAYDONGTHAI">
+          <DataField>ROILOANSDNU_SAYDONGTHAI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ROILOANSDNU_SAYTHAILIENTIEP">
+          <DataField>ROILOANSDNU_SAYTHAILIENTIEP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ROILOANSDNU_KHAC">
+          <DataField>ROILOANSDNU_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DKXUATHIENBENH_CO">
+          <DataField>DKXUATHIENBENH_CO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DKXUATHIENBENH_KHONG">
+          <DataField>DKXUATHIENBENH_KHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MOTAVAANCHAN">
+          <DataField>MOTAVAANCHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DA_BINHTHUONG">
+          <DataField>DA_BINHTHUONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DA_KHO">
+          <DataField>DA_KHO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DA_NONG">
+          <DataField>DA_NONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DA_LANH">
+          <DataField>DA_LANH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DA_UOT">
+          <DataField>DA_UOT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DA_CHANTAYNONG">
+          <DataField>DA_CHANTAYNONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DA_CHANTAYLANH">
+          <DataField>DA_CHANTAYLANH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DA_ANLOM">
+          <DataField>DA_ANLOM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DA_ANDAU">
+          <DataField>DA_ANDAU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DA_CUCCUNG">
+          <DataField>DA_CUCCUNG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DA_KHAC">
+          <DataField>DA_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MOHOI_TOANTHAN">
+          <DataField>MOHOI_TOANTHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MOHOI_TRAN">
+          <DataField>MOHOI_TRAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MOHOI_TAYCHAN">
+          <DataField>MOHOI_TAYCHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MOHOIXUCCHAN_KHAC">
+          <DataField>MOHOIXUCCHAN_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CXK_SANCHAC">
+          <DataField>CXK_SANCHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CXK_MEM">
+          <DataField>CXK_MEM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CXK_CANGCUNG">
+          <DataField>CXK_CANGCUNG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CXK_COCOANDAU">
+          <DataField>CXK_COCOANDAU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CXK_GANDAU">
+          <DataField>CXK_GANDAU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CXK_XUONGKHOPDAU">
+          <DataField>CXK_XUONGKHOPDAU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CXK_KHAC">
+          <DataField>CXK_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUNG_MEM">
+          <DataField>BUNG_MEM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUNG_CHUONG">
+          <DataField>BUNG_CHUONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUNG_COCHUONG">
+          <DataField>BUNG_COCHUONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUNG_COHONCUC">
+          <DataField>BUNG_COHONCUC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUNG_DAUTHIENAN">
+          <DataField>BUNG_DAUTHIENAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUNG_DAUCUAN">
+          <DataField>BUNG_DAUCUAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUNG_KHAC">
+          <DataField>BUNG_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MACHCHAN_PHU">
+          <DataField>MACHCHAN_PHU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MACHCHAN_TRAM">
+          <DataField>MACHCHAN_TRAM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MACHCHAN_TRI">
+          <DataField>MACHCHAN_TRI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MACHCHAN_SAC">
+          <DataField>MACHCHAN_SAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MACHCHAN_TE">
+          <DataField>MACHCHAN_TE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MACHCHAN_HUYEN">
+          <DataField>MACHCHAN_HUYEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MACHCHAN_HOAT">
+          <DataField>MACHCHAN_HOAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MACHCHAN_VOLUC">
+          <DataField>MACHCHAN_VOLUC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MACHCHAN_COLUC">
+          <DataField>MACHCHAN_COLUC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MACHCHAN_KHAC">
+          <DataField>MACHCHAN_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TONGKHAN_PHAI">
+          <DataField>TONGKHAN_PHAI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TONGKHAN_TRAI">
+          <DataField>TONGKHAN_TRAI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VIKHAN_TAYTRAI_THON">
+          <DataField>VIKHAN_TAYTRAI_THON</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VIKHAN_TAYTRAI_QUAN">
+          <DataField>VIKHAN_TAYTRAI_QUAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VIKHAN_TAYTRAI_XICH">
+          <DataField>VIKHAN_TAYTRAI_XICH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VIKHAN_TAYPHAI_THON">
+          <DataField>VIKHAN_TAYPHAI_THON</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VIKHAN_TAYPHAI_QUAN">
+          <DataField>VIKHAN_TAYPHAI_QUAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VIKHAN_TAYPHAI_XICH">
+          <DataField>VIKHAN_TAYPHAI_XICH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MOTATHIETCHAN">
+          <DataField>MOTATHIETCHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TOMTATTUCHAN">
+          <DataField>TOMTATTUCHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BIENCHUNGLUANTRI">
+          <DataField>BIENCHUNGLUANTRI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YHCT_CD_BENHDANH">
+          <DataField>YHCT_CD_BENHDANH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YHCT_CD_BATCUONG">
+          <DataField>YHCT_CD_BATCUONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YHCT_CD_NGUYENNHAN">
+          <DataField>YHCT_CD_NGUYENNHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YHCT_CD_KINHLAC">
+          <DataField>YHCT_CD_KINHLAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YHCT_CD_TANGPHU">
+          <DataField>YHCT_CD_TANGPHU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YHCT_CD_KINHMACH">
+          <DataField>YHCT_CD_KINHMACH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DT_DONTHUAN_YHCT">
+          <DataField>DT_DONTHUAN_YHCT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DT_PHUONGPHAP">
+          <DataField>DT_PHUONGPHAP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DT_PHUONGTHUOC">
+          <DataField>DT_PHUONGTHUOC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DT_PHUONGHUYET">
+          <DataField>DT_PHUONGHUYET</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DT_XOABOPBAMHUYET">
+          <DataField>DT_XOABOPBAMHUYET</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PPDTKHONGDUNGTHUOC">
+          <DataField>PPDTKHONGDUNGTHUOC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DT_KHAC">
+          <DataField>DT_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DT_KETHOP_YHHD">
+          <DataField>DT_KETHOP_YHHD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DT_KETHOP_YHHD_TEXT">
+          <DataField>DT_KETHOP_YHHD_TEXT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DD_LONG">
+          <DataField>DD_LONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DD_DAC">
+          <DataField>DD_DAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DD_KIENG">
+          <DataField>DD_KIENG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DD_KHAC">
+          <DataField>DD_KHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CS_CAP1">
+          <DataField>CS_CAP1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CS_CAP2">
+          <DataField>CS_CAP2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CS_CAP3">
+          <DataField>CS_CAP3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MACHTT">
+          <DataField>MACHTT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MACHTP">
+          <DataField>MACHTP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DINHVIBENH">
+          <DataField>DINHVIBENH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LYDOVAOVIEN">
+          <DataField>LYDOVAOVIEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="QUATRINHBENHLY">
+          <DataField>QUATRINHBENHLY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIENSUBANTHAN">
+          <DataField>TIENSUBANTHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIENSUGIADINH">
+          <DataField>TIENSUGIADINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MOTATIENSU">
+          <DataField>MOTATIENSU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DIUNG">
+          <DataField>DIUNG</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NGAYDIUNG">
+          <DataField>NGAYDIUNG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THUOCLA">
+          <DataField>THUOCLA</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NGAYTHUOCLA">
+          <DataField>NGAYTHUOCLA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MATUY">
+          <DataField>MATUY</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NGAYMATUY">
+          <DataField>NGAYMATUY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THUOCLAO">
+          <DataField>THUOCLAO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGAYTHUOCLAO">
+          <DataField>NGAYTHUOCLAO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RUOUBIA">
+          <DataField>RUOUBIA</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NGAYRUOUBIA">
+          <DataField>NGAYRUOUBIA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIENSUKHAC">
+          <DataField>TIENSUKHAC</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NGAYTIENSUKHAC">
+          <DataField>NGAYTIENSUKHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KHAMBENHTOANTHAN">
+          <DataField>KHAMBENHTOANTHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TUANHOAN">
+          <DataField>TUANHOAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HOHAP">
+          <DataField>HOHAP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIEUHOA">
+          <DataField>TIEUHOA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THANKINH">
+          <DataField>THANKINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIETNIEU">
+          <DataField>TIETNIEU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SINHDUC">
+          <DataField>SINHDUC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KHAMBENHKHAC">
+          <DataField>KHAMBENHKHAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RANGHAMMAT">
+          <DataField>RANGHAMMAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COXUONGKHOP">
+          <DataField>COXUONGKHOP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAT">
+          <DataField>MAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TAIMUIHONG">
+          <DataField>TAIMUIHONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MACH">
+          <DataField>MACH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NHIPTHO">
+          <DataField>NHIPTHO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NHIETDO">
+          <DataField>NHIETDO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CANNANG">
+          <DataField>CANNANG</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="HUYETAPCAO">
+          <DataField>HUYETAPCAO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HUYETAPTHAP">
+          <DataField>HUYETAPTHAP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHIEUCAO">
+          <DataField>CHIEUCAO</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="BMI">
+          <DataField>BMI</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CHEDODINHDUONG">
+          <DataField>CHEDODINHDUONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHEDOHOLY">
+          <DataField>CHEDOHOLY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="XETNGHIEMCLSCANLAM">
+          <DataField>XETNGHIEMCLSCANLAM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TOMTATBENHAN">
+          <DataField>TOMTATBENHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KHIVAOKHOA_BENHCHINH">
+          <DataField>KHIVAOKHOA_BENHCHINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KHIVAOKHOA_BENHPHU">
+          <DataField>KHIVAOKHOA_BENHPHU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KHIVAOKHOA_PHANBIET">
+          <DataField>KHIVAOKHOA_PHANBIET</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIENLUONG">
+          <DataField>TIENLUONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HUONGDANDIEUTRI">
+          <DataField>HUONGDANDIEUTRI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MA_KHIVAOKHOA_BENHCHINH">
+          <DataField>MA_KHIVAOKHOA_BENHCHINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MA_KHIVAOKHOA_BENHPHU">
+          <DataField>MA_KHIVAOKHOA_BENHPHU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Rectangle Name="Rectangle1">
+            <ReportItems>
+              <Textbox Name="Textbox506">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value> PHẦN II. BỆNH ÁN</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox435</rd:DefaultName>
+                <Left>0.02088in</Left>
+                <Height>0.23969in</Height>
+                <Width>6.96732in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox507">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>A. Y HỌC HIỆN ĐẠI:</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox435</rd:DefaultName>
+                <Top>0.25636in</Top>
+                <Height>0.23969in</Height>
+                <Width>2.01682in</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox508">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>I. LÝ DO VÀO VIỆN: </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox435</rd:DefaultName>
+                <Top>0.52105in</Top>
+                <Left>0.01044in</Left>
+                <Height>0.25358in</Height>
+                <Width>1.41317in</Width>
+                <ZIndex>2</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox514">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>II. BỆNH SỬ: </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!QUATRINHBENHLY.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox435</rd:DefaultName>
+                <Top>0.78991in</Top>
+                <Left>0.02088in</Left>
+                <Height>0.48076in</Height>
+                <Width>6.96732in</Width>
+                <ZIndex>3</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox516">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>III. TIỀN SỬ: </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox435</rd:DefaultName>
+                <Top>1.31233in</Top>
+                <Left>0.02088in</Left>
+                <Height>0.22908in</Height>
+                <Width>6.95691in</Width>
+                <ZIndex>4</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox517">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>1. Bản thân: </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!TIENSUBANTHAN.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox435</rd:DefaultName>
+                <Top>1.58308in</Top>
+                <Left>0.01044in</Left>
+                <Height>0.22241in</Height>
+                <Width>6.95691in</Width>
+                <ZIndex>5</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox518">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>2. Gia đình : </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!TIENSUGIADINH.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox435</rd:DefaultName>
+                <Top>2.72454in</Top>
+                <Left>0.03129in</Left>
+                <Height>0.23621in</Height>
+                <Width>6.93606in</Width>
+                <ZIndex>6</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox519">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>+ Đặc điểm liên quan đến bệnh tật: </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!MOTATIENSU.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox435</rd:DefaultName>
+                <Top>2.4293in</Top>
+                <Left>0.04173in</Left>
+                <Height>0.25357in</Height>
+                <Width>6.93606in</Width>
+                <ZIndex>7</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox51">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>+1. Dị ứng </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=IIF(Fields!DIUNG.Value = "1" , chr(253), chr(168))</Value>
+                        <Style>
+                          <FontFamily>Wingdings</FontFamily>
+                          <FontSize>12pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox51</rd:DefaultName>
+                <Top>4.68825cm</Top>
+                <Left>0.05304cm</Left>
+                <Height>0.62644cm</Height>
+                <Width>2.24743cm</Width>
+                <ZIndex>8</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox54">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>2. Rượu </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=IIF(Fields!RUOUBIA.Value = "1" , chr(253), chr(168))</Value>
+                        <Style>
+                          <FontFamily>Wingdings</FontFamily>
+                          <FontSize>12pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox51</rd:DefaultName>
+                <Top>4.68825cm</Top>
+                <Left>2.69875cm</Left>
+                <Height>0.62644cm</Height>
+                <Width>1.72237cm</Width>
+                <ZIndex>9</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox89">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>3. Ma túy </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=IIF(Fields!MATUY.Value = "1", chr(253), chr(168))</Value>
+                        <Style>
+                          <FontFamily>Wingdings</FontFamily>
+                          <FontSize>12pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox51</rd:DefaultName>
+                <Top>4.68825cm</Top>
+                <Left>4.72222cm</Left>
+                <Height>0.62996cm</Height>
+                <Width>2.20896cm</Width>
+                <ZIndex>10</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox90">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>4. Thuốc lá </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=IIF(Fields!THUOCLA.Value= "1" , chr(253), chr(168))</Value>
+                        <Style>
+                          <FontFamily>Wingdings</FontFamily>
+                          <FontSize>12pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox51</rd:DefaultName>
+                <Top>4.69178cm</Top>
+                <Left>7.6386cm</Left>
+                <Height>0.62643cm</Height>
+                <Width>2.25321cm</Width>
+                <ZIndex>11</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox98">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>5. Khác </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=IIF(Fields!TIENSUKHAC.Value = "1", chr(253), chr(168))</Value>
+                        <Style>
+                          <FontFamily>Wingdings</FontFamily>
+                          <FontSize>12pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox51</rd:DefaultName>
+                <Top>4.69178cm</Top>
+                <Left>10.30313cm</Left>
+                <Height>0.62291cm</Height>
+                <Width>2.57938cm</Width>
+                <ZIndex>12</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox520">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>IV. KHÁM BỆNH:</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox435</rd:DefaultName>
+                <Top>3.00241in</Top>
+                <Left>0.02088in</Left>
+                <Height>0.25358in</Height>
+                <Width>6.94647in</Width>
+                <ZIndex>13</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox521">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>4.1. Toàn thân: (ý thức, da niêm mạc, hệ thống hạch, tuyến giáp, vị trí, kích thước, số lượng, di động)</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox435</rd:DefaultName>
+                <Top>3.29766in</Top>
+                <Left>0.04173in</Left>
+                <Height>0.2625in</Height>
+                <Width>6.94647in</Width>
+                <ZIndex>14</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox522">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>4.2. Khám bộ phận: </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox435</rd:DefaultName>
+                <Top>4.07131in</Top>
+                <Left>0.04173in</Left>
+                <Height>0.19909in</Height>
+                <Width>4.58185in</Width>
+                <ZIndex>15</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox523">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Tuần hoàn:   </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!TUANHOAN.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox435</rd:DefaultName>
+                <Top>4.31207in</Top>
+                <Left>0.03132in</Left>
+                <Height>0.46886in</Height>
+                <Width>4.59226in</Width>
+                <ZIndex>16</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Tablix Name="Tablix1">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>1.8769cm</Width>
+                    </TablixColumn>
+                    <TablixColumn>
+                      <Width>1.81935cm</Width>
+                    </TablixColumn>
+                    <TablixColumn>
+                      <Width>1.36169cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.5669cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox14">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Mạch</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox14</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox16">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!MACH.Value</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox16</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox18">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>lần/ph</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox18</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.514cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox27">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Nhiệt độ</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox15</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="NHIETDO2">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!NHIETDO.Value</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>NHIETDO</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox29">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Độ C</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox19</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.59338cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox20">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Huyết áp</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox20</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="HUYETAPCAO">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!HUYETAPCAO.Value+"/"+Fields!HUYETAPTHAP.Value</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>HUYETAPCAO</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox22">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>mmHg</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox22</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.59337cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox23">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Nhịp thở</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox23</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="NHIPTHO">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!NHIPTHO.Value</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>NHIPTHO</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox25">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>lần/ph</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox25</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.59337cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox26">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Cân nặng</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox26</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="CANNANG">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!CANNANG.Value</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>CANNANG</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox28">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>kg</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox28</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox1">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Chiều cao</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox1</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="CANNANG2">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!CHIEUCAO.Value</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>CANNANG</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox3">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>cm</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox3</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox4">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>BMI</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox4</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="CANNANG3">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!BMI.Value</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>CANNANG</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox6">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value />
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox6</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DataSet2</DataSetName>
+                <Top>9.2192cm</Top>
+                <Left>12.08598cm</Left>
+                <Height>4.06102cm</Height>
+                <Width>5.05794cm</Width>
+                <ZIndex>17</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                  </Border>
+                  <TopBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </TopBorder>
+                  <BottomBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </BottomBorder>
+                  <LeftBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </LeftBorder>
+                  <RightBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </RightBorder>
+                </Style>
+              </Tablix>
+              <Textbox Name="Textbox30">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Fields!LYDOVAOVIEN.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>1.32347cm</Top>
+                <Left>3.65125cm</Left>
+                <Height>0.61234cm</Height>
+                <Width>14.09878cm</Width>
+                <ZIndex>18</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox72">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value EvaluationMode="Constant" />
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox8</rd:DefaultName>
+                <Top>4.7429cm</Top>
+                <Left>13.37198cm</Left>
+                <Height>0.54003cm</Height>
+                <Width>0.44979cm</Width>
+                <ZIndex>19</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                  </Border>
+                  <TopBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </TopBorder>
+                  <BottomBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </BottomBorder>
+                  <LeftBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </LeftBorder>
+                  <RightBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </RightBorder>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox71">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value EvaluationMode="Constant" />
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox8</rd:DefaultName>
+                <Top>4.7429cm</Top>
+                <Left>13.96288cm</Left>
+                <Height>0.54003cm</Height>
+                <Width>0.44979cm</Width>
+                <ZIndex>20</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                  </Border>
+                  <TopBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </TopBorder>
+                  <BottomBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </BottomBorder>
+                  <LeftBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </LeftBorder>
+                  <RightBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </RightBorder>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox70">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value EvaluationMode="Constant" />
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox8</rd:DefaultName>
+                <Top>4.7429cm</Top>
+                <Left>14.55378cm</Left>
+                <Height>0.54003cm</Height>
+                <Width>0.44979cm</Width>
+                <ZIndex>21</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                  </Border>
+                  <TopBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </TopBorder>
+                  <BottomBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </BottomBorder>
+                  <LeftBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </LeftBorder>
+                  <RightBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </RightBorder>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox69">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value EvaluationMode="Constant" />
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox8</rd:DefaultName>
+                <Top>4.7429cm</Top>
+                <Left>15.14468cm</Left>
+                <Height>0.54003cm</Height>
+                <Width>0.44979cm</Width>
+                <ZIndex>22</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                  </Border>
+                  <TopBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </TopBorder>
+                  <BottomBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </BottomBorder>
+                  <LeftBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </LeftBorder>
+                  <RightBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </RightBorder>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox68">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox8</rd:DefaultName>
+                <Top>4.7429cm</Top>
+                <Left>15.73558cm</Left>
+                <Height>0.54003cm</Height>
+                <Width>0.44979cm</Width>
+                <ZIndex>23</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                  </Border>
+                  <TopBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </TopBorder>
+                  <BottomBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </BottomBorder>
+                  <LeftBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </LeftBorder>
+                  <RightBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </RightBorder>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox41">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Fields!KHAMBENHTOANTHAN.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>9.11337cm</Top>
+                <Left>0.11483cm</Left>
+                <Height>1.05137cm</Height>
+                <Width>11.62906cm</Width>
+                <ZIndex>24</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox32">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Hô hấp:   </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!HOHAP.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>12.24938cm</Top>
+                <Left>0.10599cm</Left>
+                <Height>1.09417cm</Height>
+                <Width>11.6379cm</Width>
+                <ZIndex>25</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox43">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Tiêu hóa:   </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!TIEUHOA.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>13.44938cm</Top>
+                <Left>0.10599cm</Left>
+                <Height>0.9074cm</Height>
+                <Width>17.67056cm</Width>
+                <ZIndex>26</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox44">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Tiết niệu - sinh dục:   </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!TIETNIEU.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>14.46261cm</Top>
+                <Left>0.10599cm</Left>
+                <Height>0.93817cm</Height>
+                <Width>17.64404cm</Width>
+                <ZIndex>27</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox45">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Thần kinh:   </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!THANKINH.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>15.50661cm</Top>
+                <Left>0.07956cm</Left>
+                <Height>1.24115cm</Height>
+                <Width>17.61752cm</Width>
+                <ZIndex>28</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox46">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Cơ xương khớp:   </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!COXUONGKHOP.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>16.91491cm</Top>
+                <Left>0.07955cm</Left>
+                <Height>1.09466cm</Height>
+                <Width>17.59108cm</Width>
+                <ZIndex>29</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox47">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Tai - Mũi - Họng:   </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!TAIMUIHONG.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>18.16076cm</Top>
+                <Left>0.07955cm</Left>
+                <Height>1.08684cm</Height>
+                <Width>17.64404cm</Width>
+                <ZIndex>30</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox48">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Răng - Hàm - Mặt:   </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!RANGHAMMAT.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>19.38367cm</Top>
+                <Left>0.07955cm</Left>
+                <Height>1.1582cm</Height>
+                <Width>17.59108cm</Width>
+                <ZIndex>31</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox49">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Nội tiết, dinh dưỡng và các bệnh lý khác (nếu có):   </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!NOITIET_DINHDUONG.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>22.08675cm</Top>
+                <Left>0.05304cm</Left>
+                <Height>1.58989cm</Height>
+                <Width>17.59108cm</Width>
+                <ZIndex>32</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox50">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Mắt:   </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!MAT.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>20.64771cm</Top>
+                <Left>0.10599cm</Left>
+                <Height>1.26265cm</Height>
+                <Width>17.59108cm</Width>
+                <ZIndex>33</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox534">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Mô tả (nếu có): .................................................................................................................................................................................................................</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox435</rd:DefaultName>
+                <Top>2.13406in</Top>
+                <Left>0.02088in</Left>
+                <Height>0.25357in</Height>
+                <Width>6.91518in</Width>
+                <ZIndex>34</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>0.11759cm</Top>
+            <Left>0cm</Left>
+            <Height>23.67664cm</Height>
+            <Width>17.84172cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+        </ReportItems>
+        <Height>23.79423cm</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>17.84172cm</Width>
+      <Page>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>0cm</LeftMargin>
+        <RightMargin>0cm</RightMargin>
+        <TopMargin>1cm</TopMargin>
+        <BottomMargin>0cm</BottomMargin>
+        <ColumnSpacing>1.27cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="MABENHVIEN">
+      <DataType>String</DataType>
+      <Prompt>MABENHVIEN</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BENHAN_ID">
+      <DataType>Integer</DataType>
+      <Prompt>BENHAN ID</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TIEPNHAN_ID">
+      <DataType>Integer</DataType>
+      <Prompt>TIEPNHAN ID</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Function PageNumber() As String    
+    Return Me.Report.Globals!PageNumber    
+End Function
+Function TotalPages() As String   
+    Return Me.Report.Globals!TotalPages    
+End Function
+</Code>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>b85a0694-757a-415a-a7a0-8a0eaaac803a</rd:ReportID>
+</Report>

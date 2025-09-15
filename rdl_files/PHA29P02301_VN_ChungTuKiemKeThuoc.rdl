@@ -1,0 +1,856 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>f3235beb-9cec-4603-b13a-b8e6b302c57e</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@TUNGAY">
+            <Value>=Parameters!TUNGAY.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@DENNGAY">
+            <Value>=Parameters!DENNGAY.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@KHODUOC">
+            <Value>=Parameters!KHODUOC.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@DUOCKIEMKE_MASTER_ID">
+            <Value>=Parameters!DUOCKIEMKE_MASTER_ID.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@MABENHVIEN">
+            <Value>=Parameters!MABENHVIEN.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>PHA29P02401_VN_BBKKT</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="TENNHANVIEN">
+          <DataField>TENNHANVIEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHUCVU">
+          <DataField>CHUCVU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TENKHO">
+          <DataField>TENKHO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SO">
+          <DataField>SO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Textbox Name="TENPHIEU">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=UCase(Parameters!TENPHIEU.Value)</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>16pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>TENPHIEU</rd:DefaultName>
+            <Top>0.02778in</Top>
+            <Left>0.20598in</Left>
+            <Height>0.29167in</Height>
+            <Width>11.26899in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="FromDate">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Thời gian từ: </Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>11pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Format(CDate(Parameters!TUNGAY.Value),"dd/MM/yyyy")</Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>11pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value> - </Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>11pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Format(CDate(Parameters!DENNGAY.Value),"dd/MM/yyyy")</Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>11pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>FromDate</rd:DefaultName>
+            <Top>0.33334in</Top>
+            <Left>0.21277in</Left>
+            <Height>0.25in</Height>
+            <Width>11.26219in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox4">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Căn cứ vào Quy chế công tác Khoa Dược - Qui chế Bệnh viện của Bộ y tế ban hành theo quyết định</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>11pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox4</rd:DefaultName>
+            <Top>0.93198in</Top>
+            <Left>0.20598in</Left>
+            <Height>0.25in</Height>
+            <Width>11.26899in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox9">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>số 1895/1997/BYT - QĐ ngày 19/09/1997 của Bộ trưởng Bộ Y Tế</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>11pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox4</rd:DefaultName>
+            <Top>1.18198in</Top>
+            <Left>0.2105in</Left>
+            <Height>0.25in</Height>
+            <Width>11.26446in</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox13">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Hôm nay, Ngày 26 tháng 3 năm 2015, Hội đồng Kiểm kê gồm:</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>11pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox4</rd:DefaultName>
+            <Top>1.59591in</Top>
+            <Left>0.2105in</Left>
+            <Height>0.25in</Height>
+            <Width>11.26446in</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox16">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>     1 </Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>11pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Fields!TENNHANVIEN.Value</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>11pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>  Chức vụ  </Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>11pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Fields!CHUCVU.Value</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>11pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox4</rd:DefaultName>
+            <Top>1.8598in</Top>
+            <Left>0.21277in</Left>
+            <Height>0.25in</Height>
+            <Width>11.26446in</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox40">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Đã kiểm kê tại: </Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>11pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Fields!TENKHO.Value</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>11pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox4</rd:DefaultName>
+            <Top>2.12369in</Top>
+            <Left>0.21277in</Left>
+            <Height>0.25in</Height>
+            <Width>11.26446in</Width>
+            <ZIndex>6</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Subreport Name="PHA29P02302_VN_ChungTuKiemKeThuoc">
+            <ReportName>PHA29P02302_VN_ChungTuKiemKeThuoc</ReportName>
+            <Parameters>
+              <Parameter Name="TUNGAY">
+                <Value>=Parameters!TUNGAY.Value</Value>
+              </Parameter>
+              <Parameter Name="DENNGAY">
+                <Value>=Parameters!DENNGAY.Value</Value>
+              </Parameter>
+              <Parameter Name="KHODUOC">
+                <Value>=Parameters!KHODUOC.Value</Value>
+              </Parameter>
+              <Parameter Name="MABENHVIEN">
+                <Value>=Parameters!MABENHVIEN.Value</Value>
+              </Parameter>
+              <Parameter Name="DUOCKIEMKE_MASTER_ID">
+                <Value>=Parameters!DUOCKIEMKE_MASTER_ID.Value</Value>
+              </Parameter>
+            </Parameters>
+            <Top>2.59646in</Top>
+            <Left>0.21277in</Left>
+            <Height>2.55208in</Height>
+            <Width>11.26219in</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+        </ReportItems>
+        <Height>5.99229in</Height>
+        <Style />
+      </Body>
+      <Width>11.69in</Width>
+      <Page>
+        <PageHeader>
+          <Height>0.94396in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <ReportItems>
+            <Textbox Name="Textbox1">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Số: </Value>
+                      <Style>
+                        <FontFamily>Times New Roman</FontFamily>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>0.55064in</Top>
+              <Left>9.44176in</Left>
+              <Height>0.25in</Height>
+              <Width>0.52083in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="SO">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!SO.Value</Value>
+                      <Style>
+                        <FontFamily>Times New Roman</FontFamily>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>SO</rd:DefaultName>
+              <Top>0.55064in</Top>
+              <Left>9.97648in</Left>
+              <Height>0.25in</Height>
+              <Width>1.57986in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox7">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>MS:</Value>
+                      <Style>
+                        <FontFamily>Times New Roman</FontFamily>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox7</rd:DefaultName>
+              <Top>0.14702in</Top>
+              <Left>9.44176in</Left>
+              <Height>0.25in</Height>
+              <Width>0.52083in</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="MS">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!MS.Value</Value>
+                      <Style>
+                        <FontFamily>Times New Roman</FontFamily>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>MS</rd:DefaultName>
+              <Top>0.14702in</Top>
+              <Left>9.96259in</Left>
+              <Height>0.25in</Height>
+              <Width>1.11642in</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox12">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>/BV-01</Value>
+                      <Style>
+                        <FontFamily>Times New Roman</FontFamily>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox12</rd:DefaultName>
+              <Top>0.14702in</Top>
+              <Left>11.07901in</Left>
+              <Height>0.25in</Height>
+              <Width>0.47733in</Width>
+              <ZIndex>4</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style />
+        </PageHeader>
+        <PageHeight>8.27in</PageHeight>
+        <PageWidth>11.69in</PageWidth>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="TENPHIEU">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SO">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="MS">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TUNGAY">
+      <DataType>DateTime</DataType>
+      <Prompt>TUNGAY</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DENNGAY">
+      <DataType>DateTime</DataType>
+      <Prompt>DENNGAY</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="KHODUOC">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>KHODUOC</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="MABENHVIEN">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>MABENHVIEN</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DUOCKIEMKE_MASTER_ID">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>DUOCKIEMKE MASTER ID</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code> Public Function changeCurrencyToWords(numb As Double) As String
+        Dim num As String = numb.ToString()
+        numb = num.TrimStart("0")
+        Dim text As String = changeToWords(num, True)  
+        Dim rtext as String = left(text ,1).ToUpper() + right(text ,len(text)-1).ToLower()
+        Return rtext
+    End Function
+    Private Function changeToWords(numb As String, isCurrency As Boolean) As String
+        Dim val As String = "", wholeNo As String = numb, points As String = "", andStr As String = "", pointStr As String = ""
+        Dim endStr As String = If((isCurrency), ("đồng chẵn"), (""))
+        Try
+            Dim decimalPlace As Integer = numb.IndexOf(".")
+            If decimalPlace &gt; 0 Then
+                wholeNo = numb.Substring(0, decimalPlace)
+                points = numb.Substring(decimalPlace + 1)
+                If Convert.ToInt32(points) &gt; 0 Then
+                    andStr = If((isCurrency), ("and"), ("point"))
+                    ' just to separate whole numbers from points/cents
+                    endStr = If((isCurrency), ("Cents " + endStr), (""))
+                    pointStr = translateCents(points)
+                End If
+            End If
+            val = [String].Format("{0} {1}{2} {3}", translateWholeNumber(wholeNo).Trim(), andStr, pointStr, endStr)
+        Catch
+
+
+        End Try
+        Return val
+    End Function
+    Private Function translateWholeNumber(number As String) As String
+        Dim word As String = ""
+
+        Try
+            Dim beginsZero As Boolean = False
+            'tests for 0XX
+            Dim isDone As Boolean = False
+            'test if already translated
+            Dim dblAmt As Double = (Convert.ToDouble(number))
+            'if ((dblAmt &gt; 0) &amp;&amp; number.StartsWith("0"))
+            If dblAmt &gt; 0 Then
+                'test for zero or digit zero in a nuemric
+                beginsZero = number.StartsWith("0")
+                Dim numDigits As Integer = number.Length
+                Dim pos As Integer = 0
+                'store digit grouping
+                Dim place As [String] = ""
+                'digit grouping name:hundres,thousand,etc...
+                Select Case numDigits
+                    Case 1
+                        'ones' range
+                        word = ones(number)
+                        isDone = True
+
+                        Exit Select
+                    Case 2
+                        'tens' range
+                        word = tens(number)
+                        If beginsZero Then
+                            word = " lẻ " + word.Trim()
+                            beginsZero = False
+                        End If
+                        isDone = True
+
+                        Exit Select
+                    Case 3
+                        'hundreds' range
+                        pos = (numDigits Mod 3) + 1
+                        place = " trăm "
+                        If beginsZero Then
+                            place = "không " + place.Trim()
+                            beginsZero = False
+                        End If
+
+                        Exit Select
+                'thousands' range
+                    Case 4, 5, 6
+                        pos = (numDigits Mod 4) + 1
+                        place = " nghìn "
+
+                        Exit Select
+                'millions' range
+                    Case 7, 8, 9
+                        pos = (numDigits Mod 7) + 1
+                        place = " triệu "
+
+                        Exit Select
+                    Case 10
+                        'Billions's range
+                        pos = (numDigits Mod 10) + 1
+                        place = " tỉ "
+
+                        Exit Select
+                    Case Else
+                        'add extra case options for anything above Billion...
+                        isDone = True
+                        Exit Select
+                End Select
+                If Not isDone Then
+                    'if transalation is not done, continue...(Recursion comes in now!!)                        
+                    'check for trailing zeros
+                    'if (beginsZero) word = " and " + word.Trim();
+                    'if (beginsZero)
+                    '{
+                    '    word = "không" + word.Trim();
+                    '    beginsZero = false;
+                    '}
+                    word = translateWholeNumber(number.Substring(0, pos)) + " " + place + " "+ translateWholeNumber(number.Substring(pos))
+                End If
+                'ignore digit grouping names
+                If word.Trim().Equals(place.Trim()) Then
+                    word = ""
+                End If
+            End If
+        Catch
+
+
+        End Try
+
+        Return word.Trim()
+    End Function
+    Private Function tens(digit As String) As String
+        Dim digt As Integer = Convert.ToInt32(digit)
+        Dim name As String = Nothing
+        Select Case digt
+            Case 10
+                name = "mười"
+                Exit Select
+            Case 11
+                name = "mười một"
+                Exit Select
+            Case 12
+                name = "mười hai"
+                Exit Select
+            Case 13
+                name = "mười ba"
+                Exit Select
+            Case 14
+                name = "mười bốn"
+                Exit Select
+            Case 15
+                name = "mười lăm"
+                Exit Select
+            Case 16
+                name = "mười sáu"
+                Exit Select
+            Case 17
+                name = "mười bảy"
+                Exit Select
+            Case 18
+                name = "mười tám"
+                Exit Select
+            Case 19
+                name = "mười chín"
+                Exit Select
+            Case 20
+                name = "hai mươi"
+                Exit Select
+            Case 30
+                name = "ba mươi"
+                Exit Select
+            Case 40
+                name = "bốn mươi"
+                Exit Select
+            Case 50
+                name = "năm mươi"
+                Exit Select
+            Case 60
+                name = "sáu mươi"
+                Exit Select
+            Case 70
+                name = "bảy mươi"
+                Exit Select
+            Case 80
+                name = "tám mươi"
+                Exit Select
+            Case 90
+                name = "chín mươi"
+                Exit Select
+            Case Else
+                If digt &gt; 0 Then
+                    name = tens(digit.Substring(0, 1) + "0") + " " + ones(digit.Substring(1))
+                End If
+                Exit Select
+        End Select
+        Return name
+    End Function
+    Private Function ones(digit As String) As String
+        Dim digt As Integer = Convert.ToInt32(digit)
+        Dim name As String = ""
+        Select Case digt
+            Case 1
+                name = "một"
+                Exit Select
+            Case 2
+                name = "hai"
+                Exit Select
+            Case 3
+                name = "ba"
+                Exit Select
+            Case 4
+                name = "bốn"
+                Exit Select
+            Case 5
+                name = "năm"
+                Exit Select
+            Case 6
+                name = "sáu"
+                Exit Select
+            Case 7
+                name = "bảy"
+                Exit Select
+            Case 8
+                name = "tám"
+                Exit Select
+            Case 9
+                name = "chín"
+                Exit Select
+        End Select
+        Return name
+    End Function
+    Private Function translateCents(cents As String) As String
+        Dim cts As String = "", digit As String = "", engOne As String = ""
+        For i As Integer = 0 To cents.Length - 1
+            digit = cents(i).ToString()
+            If digit.Equals("0") Then
+                engOne = "Zero"
+            Else
+                engOne = ones(digit)
+            End If
+            cts += " " + engOne
+        Next
+        Return cts
+    End Function
+
+</Code>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>f5082dd7-bdb0-45c6-be6f-33a0300e0c8c</rd:ReportID>
+</Report>

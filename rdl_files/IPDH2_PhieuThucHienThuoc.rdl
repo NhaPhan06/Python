@@ -1,0 +1,2767 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=HG-SGHIS2-DB02;Initial Catalog=HOANMY_SAIGON_HIS;Connect Timeout=30</ConnectString>
+        <Prompt>Specify a user name and password for data source DataSource1:</Prompt>
+      </ConnectionProperties>
+      <rd:SecurityType>DataBase</rd:SecurityType>
+      <rd:DataSourceID>e7197771-b882-4324-8001-d4374e92e8f1</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@Id">
+            <Value>=Parameters!Id.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@BENHAN_ID">
+            <Value>=Parameters!BENHAN_ID.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@MABENHVIEN">
+            <Value>=Parameters!MABENHVIEN.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@TUNGAY">
+            <Value>=Parameters!TUNGAY.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@DENNGAY">
+            <Value>=Parameters!DENNGAY.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>IPDH20011</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="STT">
+          <DataField>STT</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="TOATHUOC_ID">
+          <DataField>TOATHUOC_ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="KHAMBENH_ID">
+          <DataField>KHAMBENH_ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SOLUONG">
+          <DataField>SOLUONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THUOCINFO">
+          <DataField>THUOCINFO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GHICHU">
+          <DataField>GHICHU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NHOMHUOCPHA">
+          <DataField>NHOMHUOCPHA</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="TenDuocEXT">
+          <DataField>TenDuocEXT</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="STT_THUOC_KS">
+          <DataField>STT_THUOC_KS</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TENDUOCDAYDU">
+          <DataField>TENDUOCDAYDU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DUONGDUNG">
+          <DataField>DUONGDUNG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUYCOCAO">
+          <DataField>NGUYCOCAO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIEMTRUYENTINHMACH">
+          <DataField>TIEMTRUYENTINHMACH</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DOUBLECHECK">
+          <DataField>DOUBLECHECK</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUOIKIEMTRALAN2">
+          <DataField>NGUOIKIEMTRALAN2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THOIGIANLIEU1">
+          <DataField>THOIGIANLIEU1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THOIGIANLIEU2">
+          <DataField>THOIGIANLIEU2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THOIGIANLIEU3">
+          <DataField>THOIGIANLIEU3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THOIGIANLIEU4">
+          <DataField>THOIGIANLIEU4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THOIGIANLIEU5">
+          <DataField>THOIGIANLIEU5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THOIGIANLIEU6">
+          <DataField>THOIGIANLIEU6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LIEU1">
+          <DataField>LIEU1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LIEU2">
+          <DataField>LIEU2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LIEU3">
+          <DataField>LIEU3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LIEU4">
+          <DataField>LIEU4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LIEU5">
+          <DataField>LIEU5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LIEU6">
+          <DataField>LIEU6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THUCHIENLIEU1">
+          <DataField>THUCHIENLIEU1</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="THUCHIENLIEU2">
+          <DataField>THUCHIENLIEU2</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="THUCHIENLIEU3">
+          <DataField>THUCHIENLIEU3</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="THUCHIENLIEU4">
+          <DataField>THUCHIENLIEU4</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="THUCHIENLIEU5">
+          <DataField>THUCHIENLIEU5</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="THUCHIENLIEU6">
+          <DataField>THUCHIENLIEU6</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NGUOITHUCHIEN_LIEU1">
+          <DataField>NGUOITHUCHIEN_LIEU1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUOITHUCHIEN_LIEU2">
+          <DataField>NGUOITHUCHIEN_LIEU2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUOITHUCHIEN_LIEU3">
+          <DataField>NGUOITHUCHIEN_LIEU3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUOITHUCHIEN_LIEU4">
+          <DataField>NGUOITHUCHIEN_LIEU4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUOITHUCHIEN_LIEU5">
+          <DataField>NGUOITHUCHIEN_LIEU5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUOITHUCHIEN_LIEU6">
+          <DataField>NGUOITHUCHIEN_LIEU6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGAYTHUCHIEN_LIEU1">
+          <DataField>NGAYTHUCHIEN_LIEU1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGAYTHUCHIEN_LIEU2">
+          <DataField>NGAYTHUCHIEN_LIEU2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGAYTHUCHIEN_LIEU3">
+          <DataField>NGAYTHUCHIEN_LIEU3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGAYTHUCHIEN_LIEU4">
+          <DataField>NGAYTHUCHIEN_LIEU4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGAYTHUCHIEN_LIEU5">
+          <DataField>NGAYTHUCHIEN_LIEU5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGAYTHUCHIEN_LIEU6">
+          <DataField>NGAYTHUCHIEN_LIEU6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THOIGIANKETTHUC">
+          <DataField>THOIGIANKETTHUC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DUOC_ID">
+          <DataField>DUOC_ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DuongDung_IDX">
+          <DataField>DuongDung_IDX</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IS_NGUNG">
+          <DataField>IS_NGUNG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TENBENHNHAN">
+          <DataField>TENBENHNHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGAYSINH">
+          <DataField>NGAYSINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SOBENHAN">
+          <DataField>SOBENHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGAYVAOVIEN">
+          <DataField>NGAYVAOVIEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GIUONGBENH">
+          <DataField>GIUONGBENH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAYTE">
+          <DataField>MAYTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHANDOANVAOKHOA">
+          <DataField>CHANDOANVAOKHOA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DIACHITHUONGTRU">
+          <DataField>DIACHITHUONGTRU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SOLO_LIEU1">
+          <DataField>SOLO_LIEU1</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SOLO_LIEU2">
+          <DataField>SOLO_LIEU2</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SOLO_LIEU3">
+          <DataField>SOLO_LIEU3</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SOLO_LIEU4">
+          <DataField>SOLO_LIEU4</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SOLO_LIEU5">
+          <DataField>SOLO_LIEU5</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SOLO_LIEU6">
+          <DataField>SOLO_LIEU6</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="GIOITINH">
+          <DataField>GIOITINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix3">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>16.98706cm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>6.52611cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Rectangle Name="Rectangle6">
+                          <ReportItems>
+                            <Textbox Name="TENDUOCDAYDU">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!TENDUOCDAYDU.Value</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>GHI CHÚ: </Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>8pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>=Fields!GHICHU.Value</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>8pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>TENDUOCDAYDU</rd:DefaultName>
+                              <Top>0.04343cm</Top>
+                              <Left>0.73212cm</Left>
+                              <Height>0.4046cm</Height>
+                              <Width>12.6048cm</Width>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="DUONGDUNG">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Đường dùng: </Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>=Fields!THUOCINFO.Value</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>DUONGDUNG</rd:DefaultName>
+                              <Top>0.44803cm</Top>
+                              <Left>0.26825cm</Left>
+                              <Height>0.38833cm</Height>
+                              <Width>11.63784cm</Width>
+                              <ZIndex>1</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Rectangle Name="Rectangle2">
+                              <ReportItems>
+                                <Line Name="Line1">
+                                  <Left>2.52991cm</Left>
+                                  <Height>1.21281cm</Height>
+                                  <Width>0cm</Width>
+                                  <Visibility>
+                                    <Hidden>=Fields!DOUBLECHECK.Value  &lt;&gt; 1 and Fields!NGUYCOCAO.Value&lt;&gt; 1 and Fields!TIEMTRUYENTINHMACH.Value &lt;&gt;1</Hidden>
+                                  </Visibility>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                  </Style>
+                                </Line>
+                                <Textbox Name="NGUOITHUCHIEN_LIEU1">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Split(Fields!NGUOITHUCHIEN_LIEU1.Value,",")(0)</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NGUOITHUCHIEN_LIEU1</rd:DefaultName>
+                                  <Top>0.59063cm</Top>
+                                  <Left>0.03528cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>2.42944cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="NGUOITHUCHIEN_LIEU2">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>= iif(Fields!DOUBLECHECK.Value=1 or Fields!TIEMTRUYENTINHMACH.Value=1 or Fields!NGUYCOCAO.Value=1,  Split(Fields!NGUOITHUCHIEN_LIEU1.Value, ",")(1),"")</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NGUOITHUCHIEN_LIEU1</rd:DefaultName>
+                                  <Top>0.59063cm</Top>
+                                  <Left>2.7063cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>2.33652cm</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Top>1.30368cm</Top>
+                              <Left>0.28589cm</Left>
+                              <Height>1.22958cm</Height>
+                              <Width>5.0781cm</Width>
+                              <ZIndex>2</ZIndex>
+                              <Visibility>
+                                <Hidden>=IIF(Fields!LIEU1.Value = "",true,false)</Hidden>
+                              </Visibility>
+                              <Style>
+                                <Border>
+                                  <Style>Solid</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                            <Rectangle Name="Rectangle4">
+                              <ReportItems>
+                                <Line Name="Line3">
+                                  <Left>2.70238cm</Left>
+                                  <Height>1.22958cm</Height>
+                                  <Width>0cm</Width>
+                                  <Visibility>
+                                    <Hidden>=Fields!DOUBLECHECK.Value  &lt;&gt; 1 and Fields!NGUYCOCAO.Value&lt;&gt; 1 and Fields!TIEMTRUYENTINHMACH.Value &lt;&gt;1</Hidden>
+                                  </Visibility>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                  </Style>
+                                </Line>
+                                <Textbox Name="NGUOITHUCHIEN_LIEU3">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Split(Fields!NGUOITHUCHIEN_LIEU2.Value, ",")(0)</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NGUOITHUCHIEN_LIEU1</rd:DefaultName>
+                                  <Top>0.61281cm</Top>
+                                  <Left>0.17247cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>2.35352cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="NGUOITHUCHIEN_LIEU8">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>= iif(Fields!DOUBLECHECK.Value=1 or Fields!TIEMTRUYENTINHMACH.Value=1 or Fields!NGUYCOCAO.Value=1,  Split(Fields!NGUOITHUCHIEN_LIEU2.Value, ",")(1),"")</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NGUOITHUCHIEN_LIEU1</rd:DefaultName>
+                                  <Top>0.62825cm</Top>
+                                  <Left>2.87877cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>2.33652cm</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Top>1.30368cm</Top>
+                              <Left>5.5051cm</Left>
+                              <Height>1.22958cm</Height>
+                              <Width>5.40476cm</Width>
+                              <ZIndex>3</ZIndex>
+                              <Visibility>
+                                <Hidden>=IIF(Fields!LIEU2.Value = "",true,false)</Hidden>
+                              </Visibility>
+                              <Style>
+                                <Border>
+                                  <Style>Solid</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                            <Textbox Name="Textbox67">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!STT_THUOC_KS.Value</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox67</rd:DefaultName>
+                              <Top>0.04233cm</Top>
+                              <Left>0.28086cm</Left>
+                              <Height>0.4057cm</Height>
+                              <Width>0.47625cm</Width>
+                              <ZIndex>4</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <VerticalAlign>Bottom</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox1">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>SL: </Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>=Fields!SOLUONG.Value</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value xml:space="preserve"> </Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox1</rd:DefaultName>
+                              <Top>0.05156cm</Top>
+                              <Left>13.33692cm</Left>
+                              <Height>0.38833cm</Height>
+                              <Width>3.4955cm</Width>
+                              <ZIndex>5</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <VerticalAlign>Bottom</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox2">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!LIEU1.Value</Value>
+                                      <MarkupType>HTML</MarkupType>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox1</rd:DefaultName>
+                              <Top>0.83636cm</Top>
+                              <Left>0.28086cm</Left>
+                              <Height>0.38833cm</Height>
+                              <Width>5.04008cm</Width>
+                              <ZIndex>6</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox7">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!LIEU2.Value</Value>
+                                      <MarkupType>HTML</MarkupType>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox1</rd:DefaultName>
+                              <Top>0.83636cm</Top>
+                              <Left>5.44242cm</Left>
+                              <Height>0.38833cm</Height>
+                              <Width>5.40476cm</Width>
+                              <ZIndex>7</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox8">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!LIEU3.Value</Value>
+                                      <MarkupType>HTML</MarkupType>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox1</rd:DefaultName>
+                              <Top>0.83636cm</Top>
+                              <Left>11.02356cm</Left>
+                              <Height>0.38833cm</Height>
+                              <Width>5.22031cm</Width>
+                              <ZIndex>8</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox9">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!LIEU4.Value</Value>
+                                      <MarkupType>HTML</MarkupType>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox1</rd:DefaultName>
+                              <Top>2.63543cm</Top>
+                              <Left>0.28589cm</Left>
+                              <Height>0.40345cm</Height>
+                              <Width>5.04008cm</Width>
+                              <ZIndex>9</ZIndex>
+                              <Visibility>
+                                <Hidden>=IIF(Fields!LIEU4.Value = "",true,false)</Hidden>
+                              </Visibility>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox10">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!LIEU5.Value</Value>
+                                      <MarkupType>HTML</MarkupType>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox1</rd:DefaultName>
+                              <Top>2.63543cm</Top>
+                              <Left>5.5051cm</Left>
+                              <Height>0.40345cm</Height>
+                              <Width>5.40476cm</Width>
+                              <ZIndex>10</ZIndex>
+                              <Visibility>
+                                <Hidden>=IIF(Fields!LIEU5.Value = "",true,false)</Hidden>
+                              </Visibility>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox11">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!LIEU6.Value</Value>
+                                      <MarkupType>HTML</MarkupType>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox1</rd:DefaultName>
+                              <Top>2.63543cm</Top>
+                              <Left>11.08625cm</Left>
+                              <Height>0.40345cm</Height>
+                              <Width>5.2203cm</Width>
+                              <ZIndex>11</ZIndex>
+                              <Visibility>
+                                <Hidden>=IIF(Fields!LIEU6.Value = "", True, False)</Hidden>
+                              </Visibility>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Rectangle Name="Rectangle5">
+                              <ReportItems>
+                                <Line Name="Line4">
+                                  <Left>2.61015cm</Left>
+                                  <Height>1.22958cm</Height>
+                                  <Width>0cm</Width>
+                                  <Visibility>
+                                    <Hidden>=Fields!DOUBLECHECK.Value  &lt;&gt; 1 and Fields!NGUYCOCAO.Value&lt;&gt; 1 and Fields!TIEMTRUYENTINHMACH.Value &lt;&gt;1</Hidden>
+                                  </Visibility>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                  </Style>
+                                </Line>
+                                <Textbox Name="NGUOITHUCHIEN_LIEU4">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Split(Fields!NGUOITHUCHIEN_LIEU3.Value, ",")(0)</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NGUOITHUCHIEN_LIEU1</rd:DefaultName>
+                                  <Top>0.61281cm</Top>
+                                  <Left>0.14198cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>2.35352cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="NGUOITHUCHIEN_LIEU9">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>= iif(Fields!DOUBLECHECK.Value=1 or Fields!TIEMTRUYENTINHMACH.Value=1 or Fields!NGUYCOCAO.Value=1,  Split(Fields!NGUOITHUCHIEN_LIEU3.Value, ",")(1),"")</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NGUOITHUCHIEN_LIEU1</rd:DefaultName>
+                                  <Top>0.62825cm</Top>
+                                  <Left>2.813cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>2.33652cm</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Top>1.30368cm</Top>
+                              <Left>11.06586cm</Left>
+                              <Height>1.22958cm</Height>
+                              <Width>5.22031cm</Width>
+                              <ZIndex>12</ZIndex>
+                              <Visibility>
+                                <Hidden>=IIF(Fields!LIEU3.Value = "",true,false)</Hidden>
+                              </Visibility>
+                              <Style>
+                                <Border>
+                                  <Style>Solid</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                            <Rectangle Name="Rectangle3">
+                              <ReportItems>
+                                <Line Name="Line5">
+                                  <Left>2.50754cm</Left>
+                                  <Height>1.21282cm</Height>
+                                  <Width>0cm</Width>
+                                  <Visibility>
+                                    <Hidden>=Fields!DOUBLECHECK.Value  &lt;&gt; 1 and Fields!NGUYCOCAO.Value&lt;&gt; 1 and Fields!TIEMTRUYENTINHMACH.Value &lt;&gt;1</Hidden>
+                                  </Visibility>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                  </Style>
+                                </Line>
+                                <Textbox Name="NGUOITHUCHIEN_LIEU5">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Split(Fields!NGUOITHUCHIEN_LIEU4.Value, ",")(0)</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NGUOITHUCHIEN_LIEU1</rd:DefaultName>
+                                  <Top>0.61282cm</Top>
+                                  <Left>0.08347cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>2.35352cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="NGUOITHUCHIEN_LIEU10">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>= iif(Fields!DOUBLECHECK.Value=1 or Fields!TIEMTRUYENTINHMACH.Value=1 or Fields!NGUYCOCAO.Value=1,  Split(Fields!NGUOITHUCHIEN_LIEU4.Value, ",")(1),"")</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NGUOITHUCHIEN_LIEU1</rd:DefaultName>
+                                  <Top>0.61282cm</Top>
+                                  <Left>2.64865cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>2.33652cm</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Top>3.14471cm</Top>
+                              <Left>0.28589cm</Left>
+                              <Height>1.21282cm</Height>
+                              <Width>5.01509cm</Width>
+                              <ZIndex>13</ZIndex>
+                              <Visibility>
+                                <Hidden>=IIF(Fields!LIEU4.Value = "",true,false)</Hidden>
+                              </Visibility>
+                              <Style>
+                                <Border>
+                                  <Style>Solid</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                            <Rectangle Name="Rectangle7">
+                              <ReportItems>
+                                <Line Name="Line6">
+                                  <Left>2.70238cm</Left>
+                                  <Height>1.21282cm</Height>
+                                  <Width>0cm</Width>
+                                  <Visibility>
+                                    <Hidden>=Fields!DOUBLECHECK.Value  &lt;&gt; 1 and Fields!NGUYCOCAO.Value&lt;&gt; 1 and Fields!TIEMTRUYENTINHMACH.Value &lt;&gt;1</Hidden>
+                                  </Visibility>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                  </Style>
+                                </Line>
+                                <Textbox Name="NGUOITHUCHIEN_LIEU6">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Split(Fields!NGUOITHUCHIEN_LIEU5.Value, ",")(0)</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NGUOITHUCHIEN_LIEU1</rd:DefaultName>
+                                  <Top>0.61282cm</Top>
+                                  <Left>0.13731cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>2.35352cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="NGUOITHUCHIEN_LIEU11">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>= iif(Fields!DOUBLECHECK.Value=1 or Fields!TIEMTRUYENTINHMACH.Value=1 or Fields!NGUYCOCAO.Value=1,  Split(Fields!NGUOITHUCHIEN_LIEU5.Value, ",")(1),"")</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NGUOITHUCHIEN_LIEU1</rd:DefaultName>
+                                  <Top>0.61282cm</Top>
+                                  <Left>2.87877cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>2.33652cm</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Top>3.14471cm</Top>
+                              <Left>5.5051cm</Left>
+                              <Height>1.21282cm</Height>
+                              <Width>5.40476cm</Width>
+                              <ZIndex>14</ZIndex>
+                              <Visibility>
+                                <Hidden>=IIF(Fields!LIEU5.Value = "",true,false)</Hidden>
+                              </Visibility>
+                              <Style>
+                                <Border>
+                                  <Style>Solid</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                            <Rectangle Name="Rectangle8">
+                              <ReportItems>
+                                <Line Name="Line7">
+                                  <Left>2.61016cm</Left>
+                                  <Height>1.21282cm</Height>
+                                  <Width>0cm</Width>
+                                  <Visibility>
+                                    <Hidden>=Fields!DOUBLECHECK.Value  &lt;&gt; 1 and Fields!NGUYCOCAO.Value&lt;&gt; 1 and Fields!TIEMTRUYENTINHMACH.Value &lt;&gt;1</Hidden>
+                                  </Visibility>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                  </Style>
+                                </Line>
+                                <Textbox Name="NGUOITHUCHIEN_LIEU7">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Split(Fields!NGUOITHUCHIEN_LIEU6.Value, ",")(0)</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NGUOITHUCHIEN_LIEU1</rd:DefaultName>
+                                  <Top>0.61282cm</Top>
+                                  <Left>0.08025cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>2.35352cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="NGUOITHUCHIEN_LIEU12">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>= iif(Fields!DOUBLECHECK.Value=1 or Fields!TIEMTRUYENTINHMACH.Value=1 or Fields!NGUYCOCAO.Value=1,  Split(Fields!NGUOITHUCHIEN_LIEU6.Value, ",")(1),"")</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NGUOITHUCHIEN_LIEU1</rd:DefaultName>
+                                  <Top>0.61282cm</Top>
+                                  <Left>2.71599cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>2.33652cm</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Top>3.14471cm</Top>
+                              <Left>11.06586cm</Left>
+                              <Height>1.21282cm</Height>
+                              <Width>5.22031cm</Width>
+                              <ZIndex>15</ZIndex>
+                              <Visibility>
+                                <Hidden>=IIF(Fields!LIEU6.Value = "", True, False)</Hidden>
+                              </Visibility>
+                              <Style>
+                                <Border>
+                                  <Style>Solid</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                            <Rectangle Name="Rectangle9">
+                              <ReportItems>
+                                <Textbox Name="NGUOITHUCHIEN_LIEU13">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!NGUOIKIEMTRALAN2.Value</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NGUOITHUCHIEN_LIEU1</rd:DefaultName>
+                                  <Top>0.73543cm</Top>
+                                  <Left>0.13838cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>4.62631cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Top>5.14416cm</Top>
+                              <Left>0.28589cm</Left>
+                              <Height>1.33543cm</Height>
+                              <Width>5.01509cm</Width>
+                              <ZIndex>16</ZIndex>
+                              <Visibility>
+                                <Hidden>=IIF(Fields!NGUOIKIEMTRALAN2.Value = "", True, False)</Hidden>
+                              </Visibility>
+                              <Style>
+                                <Border>
+                                  <Style>Solid</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                            <Textbox Name="Textbox12">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Người kiểm tra lần 2</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox1</rd:DefaultName>
+                              <Top>4.49864cm</Top>
+                              <Left>0.2609cm</Left>
+                              <Height>0.35306cm</Height>
+                              <Width>5.04008cm</Width>
+                              <ZIndex>17</ZIndex>
+                              <Visibility>
+                                <Hidden>=IIF(Fields!NGUOIKIEMTRALAN2.Value = "", True, False)</Hidden>
+                              </Visibility>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </ReportItems>
+                          <KeepTogether>true</KeepTogether>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Details" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet1</DataSetName>
+            <Top>0.0635cm</Top>
+            <Left>0.05952cm</Left>
+            <Height>6.52611cm</Height>
+            <Width>16.98706cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+          <Rectangle Name="RectSection4">
+            <ReportItems>
+              <Textbox Name="Text53">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>ĐD/HS giao</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>(ký, ghi rõ họ tên)</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <Left>0.01959in</Left>
+                <Height>0.48698in</Height>
+                <Width>1.62543in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+              <Textbox Name="Text54">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>ĐD/HS nhận</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>(ký, ghi rõ họ tên)</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <Left>1.73416in</Left>
+                <Height>0.48698in</Height>
+                <Width>1.53612in</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+              <Textbox Name="Text61">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>NB/NNNB xác nhận</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>ĐÃ NHẬN ĐỦ THUỐC TRONG NGÀY</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>(ký, ghi rõ họ tên)</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.01389in</Top>
+                <Left>3.34326in</Left>
+                <Height>0.47309in</Height>
+                <Width>3.39907in</Width>
+                <ZIndex>2</ZIndex>
+                <Visibility>
+                  <Hidden>true</Hidden>
+                </Visibility>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox4">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>sign1</Value>
+                        <Style>
+                          <Color>White</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox4</rd:DefaultName>
+                <Top>1.80135cm</Top>
+                <Left>0.84946cm</Left>
+                <Height>0.6cm</Height>
+                <Width>2.5cm</Width>
+                <ZIndex>3</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox5">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>sign2</Value>
+                        <Style>
+                          <Color>White</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox4</rd:DefaultName>
+                <Top>1.80135cm</Top>
+                <Left>5.13177cm</Left>
+                <Height>0.6cm</Height>
+                <Width>2.5cm</Width>
+                <ZIndex>4</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox13">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>sign3</Value>
+                        <Style>
+                          <Color>White</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox4</rd:DefaultName>
+                <Top>1.80135cm</Top>
+                <Left>11.85893cm</Left>
+                <Height>0.6cm</Height>
+                <Width>2.5cm</Width>
+                <ZIndex>5</ZIndex>
+                <Visibility>
+                  <Hidden>true</Hidden>
+                </Visibility>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.68158in</Top>
+            <Left>0.05582in</Left>
+            <Height>1.2412in</Height>
+            <Width>6.74234in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+        </ReportItems>
+        <Height>10.28136cm</Height>
+        <Style />
+      </Body>
+      <Width>17.40911cm</Width>
+      <Page>
+        <PageHeader>
+          <Height>3.84685cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="TieuDe1">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=UCase(Parameters!TENPHIEU.Value)</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>16pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.00595in</Top>
+              <Left>2.17691in</Left>
+              <Height>0.28473in</Height>
+              <Width>4.62509in</Width>
+              <Style>
+                <Border />
+                <TopBorder>
+                  <Style>None</Style>
+                </TopBorder>
+                <BottomBorder>
+                  <Style>None</Style>
+                </BottomBorder>
+                <LeftBorder>
+                  <Style>None</Style>
+                </LeftBorder>
+                <RightBorder>
+                  <Style>None</Style>
+                </RightBorder>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="Text4">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>= "Họ tên người bệnh: " +First(Fields!TENBENHNHAN.Value, "DataSet1")</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.5586in</Top>
+              <Left>0.02343in</Left>
+              <Height>0.1875in</Height>
+              <Width>3.53521in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border />
+                <TopBorder>
+                  <Style>None</Style>
+                </TopBorder>
+                <BottomBorder>
+                  <Style>None</Style>
+                </BottomBorder>
+                <LeftBorder>
+                  <Style>None</Style>
+                </LeftBorder>
+                <RightBorder>
+                  <Style>None</Style>
+                </RightBorder>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="Text5">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Ngày sinh: </Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=First(Fields!NGAYSINH.Value, "DataSet1")</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.5586in</Top>
+              <Left>3.55864in</Left>
+              <Height>0.1875in</Height>
+              <Width>2.15771in</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border />
+                <TopBorder>
+                  <Style>None</Style>
+                </TopBorder>
+                <BottomBorder>
+                  <Style>None</Style>
+                </BottomBorder>
+                <LeftBorder>
+                  <Style>None</Style>
+                </LeftBorder>
+                <RightBorder>
+                  <Style>None</Style>
+                </RightBorder>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="Text6">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Giới tính:</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.5586in</Top>
+              <Left>5.71635in</Left>
+              <Height>0.1875in</Height>
+              <Width>0.60875in</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border />
+                <TopBorder>
+                  <Style>None</Style>
+                </TopBorder>
+                <BottomBorder>
+                  <Style>None</Style>
+                </BottomBorder>
+                <LeftBorder>
+                  <Style>None</Style>
+                </LeftBorder>
+                <RightBorder>
+                  <Style>None</Style>
+                </RightBorder>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="Text7">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Fields!GIOITINH.Value</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.5711in</Top>
+              <Left>6.35488in</Left>
+              <Height>0.1875in</Height>
+              <Width>0.47566in</Width>
+              <ZIndex>4</ZIndex>
+              <Style>
+                <Border />
+                <TopBorder>
+                  <Style>None</Style>
+                </TopBorder>
+                <BottomBorder>
+                  <Style>None</Style>
+                </BottomBorder>
+                <LeftBorder>
+                  <Style>None</Style>
+                </LeftBorder>
+                <RightBorder>
+                  <Style>None</Style>
+                </RightBorder>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="Text9">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="Mã người bệnh: " + First(Fields!MAYTE.Value, "DataSet1")</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.7586in</Top>
+              <Left>0.02482in</Left>
+              <Height>0.1875in</Height>
+              <Width>2.01544in</Width>
+              <ZIndex>5</ZIndex>
+              <Style>
+                <Border />
+                <TopBorder>
+                  <Style>None</Style>
+                </TopBorder>
+                <BottomBorder>
+                  <Style>None</Style>
+                </BottomBorder>
+                <LeftBorder>
+                  <Style>None</Style>
+                </LeftBorder>
+                <RightBorder>
+                  <Style>None</Style>
+                </RightBorder>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="Text19">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>= "Ngày vào viện: " + First(Fields!NGAYVAOVIEN.Value, "DataSet1")</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.7586in</Top>
+              <Left>2.04026in</Left>
+              <Height>0.1875in</Height>
+              <Width>2.57905in</Width>
+              <ZIndex>6</ZIndex>
+              <Style>
+                <Border />
+                <TopBorder>
+                  <Style>None</Style>
+                </TopBorder>
+                <BottomBorder>
+                  <Style>None</Style>
+                </BottomBorder>
+                <LeftBorder>
+                  <Style>None</Style>
+                </LeftBorder>
+                <RightBorder>
+                  <Style>None</Style>
+                </RightBorder>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="Text26">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>= "Chẩn đoán: " + First(Fields!CHANDOANVAOKHOA.Value, "DataSet1")</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.16034in</Top>
+              <Left>0.02482in</Left>
+              <Height>0.1875in</Height>
+              <Width>6.77856in</Width>
+              <ZIndex>7</ZIndex>
+              <Style>
+                <Border />
+                <TopBorder>
+                  <Style>None</Style>
+                </TopBorder>
+                <BottomBorder>
+                  <Style>None</Style>
+                </BottomBorder>
+                <LeftBorder>
+                  <Style>None</Style>
+                </LeftBorder>
+                <RightBorder>
+                  <Style>None</Style>
+                </RightBorder>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox3">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Ngày/Date:   </Value>
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=FORMAT(Cdate(Globals!ExecutionTime), "dd")</Value>
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value> /</Value>
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=FORMAT(Cdate(Globals!ExecutionTime), "MM")</Value>
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value> /</Value>
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=FORMAT(Cdate(Globals!ExecutionTime), "yyyy")</Value>
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox3</rd:DefaultName>
+              <Top>0.30736in</Top>
+              <Left>5.52935cm</Left>
+              <Height>0.17361in</Height>
+              <Width>3.99175in</Width>
+              <ZIndex>8</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Text70">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!TENDONVI.Value</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.33891in</Top>
+              <Left>0.02343in</Left>
+              <Height>0.21969in</Height>
+              <Width>2.42272in</Width>
+              <ZIndex>9</ZIndex>
+              <Style>
+                <Border />
+                <TopBorder>
+                  <Style>None</Style>
+                </TopBorder>
+                <BottomBorder>
+                  <Style>None</Style>
+                </BottomBorder>
+                <LeftBorder>
+                  <Style>None</Style>
+                </LeftBorder>
+                <RightBorder>
+                  <Style>None</Style>
+                </RightBorder>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="Text72">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!TENBENHVIEN.Value</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Left>0.02482in</Left>
+              <Height>0.31529in</Height>
+              <Width>2.42133in</Width>
+              <ZIndex>10</ZIndex>
+              <Style>
+                <Border />
+                <TopBorder>
+                  <Style>None</Style>
+                </TopBorder>
+                <BottomBorder>
+                  <Style>None</Style>
+                </BottomBorder>
+                <LeftBorder>
+                  <Style>None</Style>
+                </LeftBorder>
+                <RightBorder>
+                  <Style>None</Style>
+                </RightBorder>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="Text27">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>= "Giường: " + First(Fields!GIUONGBENH.Value, "DataSet1")</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.7586in</Top>
+              <Left>4.68875in</Left>
+              <Height>0.1875in</Height>
+              <Width>2.10074in</Width>
+              <ZIndex>11</ZIndex>
+              <Style>
+                <Border />
+                <TopBorder>
+                  <Style>None</Style>
+                </TopBorder>
+                <BottomBorder>
+                  <Style>None</Style>
+                </BottomBorder>
+                <LeftBorder>
+                  <Style>None</Style>
+                </LeftBorder>
+                <RightBorder>
+                  <Style>None</Style>
+                </RightBorder>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox6">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Tờ số:</Value>
+                      <Style>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value xml:space="preserve">  </Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox3</rd:DefaultName>
+              <Top>0.30736in</Top>
+              <Left>6.13628in</Left>
+              <Height>0.1839in</Height>
+              <Width>0.66572in</Width>
+              <ZIndex>12</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Text28">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="Địa chỉ: " + First(Fields!DIACHITHUONGTRU.Value, "DataSet1")</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.94506in</Top>
+              <Left>0.02482in</Left>
+              <Height>0.1875in</Height>
+              <Width>6.77856in</Width>
+              <ZIndex>13</ZIndex>
+              <Style>
+                <Border />
+                <TopBorder>
+                  <Style>None</Style>
+                </TopBorder>
+                <BottomBorder>
+                  <Style>None</Style>
+                </BottomBorder>
+                <LeftBorder>
+                  <Style>None</Style>
+                </LeftBorder>
+                <RightBorder>
+                  <Style>None</Style>
+                </RightBorder>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <PageFooter>
+          <Height>0.54913cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox68">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>(In ngày: </Value>
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Day(Now())&amp;"/"&amp; Month(Now())&amp;"/"&amp; Year(Now()) &amp;"  "&amp; Format(Cdate(Globals!ExecutionTime),"hh:mm:ss")</Value>
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>)</Value>
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox21</rd:DefaultName>
+              <Top>0.03487cm</Top>
+              <Left>0.11905cm</Left>
+              <Height>0.40319cm</Height>
+              <Width>15.23797cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Bottom</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox34">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="Trang " &amp; Globals!PageNumber &amp; "/" &amp; Globals!TotalPages</Value>
+                      <Style>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox32</rd:DefaultName>
+              <Top>0in</Top>
+              <Left>15.44001cm</Left>
+              <Height>0.47293cm</Height>
+              <Width>1.80456cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>1.7cm</LeftMargin>
+        <RightMargin>1.7cm</RightMargin>
+        <TopMargin>1cm</TopMargin>
+        <BottomMargin>1cm</BottomMargin>
+        <ColumnSpacing>1.27cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="TENBENHVIEN">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TENDONVI">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TENPHIEU">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>TENPHIEU</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TENBENHNHAN">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>TENBENHNHAN</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="Id">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Id</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="MABENHVIEN">
+      <DataType>String</DataType>
+      <Prompt>MABENHVIEN</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BENHAN_ID">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>BENHAN ID</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TUNGAY">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>TUNGAY</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DENNGAY">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>DENNGAY</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="GT">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>GT</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="KHAMBENH_ID">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>KHAMBENH_ID</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code> Public Function changeCurrencyToWords(numb As Double) As String
+        Dim num As String = numb.ToString()
+        numb = num.TrimStart("0")
+        Dim text As String = changeToWords(num, True)  
+        Dim rtext as String = left(text ,1).ToUpper() + right(text ,len(text)-1).ToLower()
+        Return rtext
+    End Function
+    Private Function changeToWords(numb As String, isCurrency As Boolean) As String
+        Dim val As String = "", wholeNo As String = numb, points As String = "", andStr As String = "", pointStr As String = ""
+        Dim endStr As String = If((isCurrency), ("đồng chẵn"), (""))
+        Try
+            Dim decimalPlace As Integer = numb.IndexOf(".")
+            If decimalPlace &gt; 0 Then
+                wholeNo = numb.Substring(0, decimalPlace)
+                points = numb.Substring(decimalPlace + 1)
+                If Convert.ToInt32(points) &gt; 0 Then
+                    andStr = If((isCurrency), ("and"), ("point"))
+                    ' just to separate whole numbers from points/cents
+                    endStr = If((isCurrency), ("Cents " + endStr), (""))
+                    pointStr = translateCents(points)
+                End If
+            End If
+            val = [String].Format("{0} {1}{2} {3}", translateWholeNumber(wholeNo).Trim(), andStr, pointStr, endStr)
+        Catch
+
+
+        End Try
+        Return val
+    End Function
+    Private Function translateWholeNumber(number As String) As String
+        Dim word As String = ""
+
+        Try
+            Dim beginsZero As Boolean = False
+            'tests for 0XX
+            Dim isDone As Boolean = False
+            'test if already translated
+            Dim dblAmt As Double = (Convert.ToDouble(number))
+            'if ((dblAmt &gt; 0) &amp;&amp; number.StartsWith("0"))
+            If dblAmt &gt; 0 Then
+                'test for zero or digit zero in a nuemric
+                beginsZero = number.StartsWith("0")
+                Dim numDigits As Integer = number.Length
+                Dim pos As Integer = 0
+                'store digit grouping
+                Dim place As [String] = ""
+                'digit grouping name:hundres,thousand,etc...
+                Select Case numDigits
+                    Case 1
+                        'ones' range
+                        word = ones(number)
+                        isDone = True
+
+                        Exit Select
+                    Case 2
+                        'tens' range
+                        word = tens(number)
+                        If beginsZero Then
+                            word = " lẻ " + word.Trim()
+                            beginsZero = False
+                        End If
+                        isDone = True
+
+                        Exit Select
+                    Case 3
+                        'hundreds' range
+                        pos = (numDigits Mod 3) + 1
+                        place = " trăm "
+                        If beginsZero Then
+                            place = "không " + place.Trim()
+                            beginsZero = False
+                        End If
+
+                        Exit Select
+                'thousands' range
+                    Case 4, 5, 6
+                        pos = (numDigits Mod 4) + 1
+                        place = " nghìn "
+
+                        Exit Select
+                'millions' range
+                    Case 7, 8, 9
+                        pos = (numDigits Mod 7) + 1
+                        place = " triệu "
+
+                        Exit Select
+                    Case 10
+                        'Billions's range
+                        pos = (numDigits Mod 10) + 1
+                        place = " tỉ "
+
+                        Exit Select
+                    Case Else
+                        'add extra case options for anything above Billion...
+                        isDone = True
+                        Exit Select
+                End Select
+                If Not isDone Then
+                    'if transalation is not done, continue...(Recursion comes in now!!)                        
+                    'check for trailing zeros
+                    'if (beginsZero) word = " and " + word.Trim();
+                    'if (beginsZero)
+                    '{
+                    '    word = "không" + word.Trim();
+                    '    beginsZero = false;
+                    '}
+                    word = translateWholeNumber(number.Substring(0, pos)) + " " + place + " "+ translateWholeNumber(number.Substring(pos))
+                End If
+                'ignore digit grouping names
+                If word.Trim().Equals(place.Trim()) Then
+                    word = ""
+                End If
+            End If
+        Catch
+
+
+        End Try
+
+        Return word.Trim()
+    End Function
+    Private Function tens(digit As String) As String
+        Dim digt As Integer = Convert.ToInt32(digit)
+        Dim name As String = Nothing
+        Select Case digt
+            Case 10
+                name = "mười"
+                Exit Select
+            Case 11
+                name = "mười một"
+                Exit Select
+            Case 12
+                name = "mười hai"
+                Exit Select
+            Case 13
+                name = "mười ba"
+                Exit Select
+            Case 14
+                name = "mười bốn"
+                Exit Select
+            Case 15
+                name = "mười lăm"
+                Exit Select
+            Case 16
+                name = "mười sáu"
+                Exit Select
+            Case 17
+                name = "mười bảy"
+                Exit Select
+            Case 18
+                name = "mười tám"
+                Exit Select
+            Case 19
+                name = "mười chín"
+                Exit Select
+            Case 20
+                name = "hai mươi"
+                Exit Select
+            Case 30
+                name = "ba mươi"
+                Exit Select
+            Case 40
+                name = "bốn mươi"
+                Exit Select
+            Case 50
+                name = "năm mươi"
+                Exit Select
+            Case 60
+                name = "sáu mươi"
+                Exit Select
+            Case 70
+                name = "bảy mươi"
+                Exit Select
+            Case 80
+                name = "tám mươi"
+                Exit Select
+            Case 90
+                name = "chín mươi"
+                Exit Select
+            Case Else
+                If digt &gt; 0 Then
+                    name = tens(digit.Substring(0, 1) + "0") + " " + ones(digit.Substring(1))
+                End If
+                Exit Select
+        End Select
+        Return name
+    End Function
+    Private Function ones(digit As String) As String
+        Dim digt As Integer = Convert.ToInt32(digit)
+        Dim name As String = ""
+        Select Case digt
+            Case 1
+                name = "một"
+                Exit Select
+            Case 2
+                name = "hai"
+                Exit Select
+            Case 3
+                name = "ba"
+                Exit Select
+            Case 4
+                name = "bốn"
+                Exit Select
+            Case 5
+                name = "năm"
+                Exit Select
+            Case 6
+                name = "sáu"
+                Exit Select
+            Case 7
+                name = "bảy"
+                Exit Select
+            Case 8
+                name = "tám"
+                Exit Select
+            Case 9
+                name = "chín"
+                Exit Select
+        End Select
+        Return name
+    End Function
+    Private Function translateCents(cents As String) As String
+        Dim cts As String = "", digit As String = "", engOne As String = ""
+        For i As Integer = 0 To cents.Length - 1
+            digit = cents(i).ToString()
+            If digit.Equals("0") Then
+                engOne = "Zero"
+            Else
+                engOne = ones(digit)
+            End If
+            cts += " " + engOne
+        Next
+        Return cts
+    End Function
+
+</Code>
+  <CodeModules>
+    <CodeModule>ReportExtension, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</CodeModule>
+  </CodeModules>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>058e19a3-7585-4ae3-b292-0e3e6bb40083</rd:ReportID>
+</Report>

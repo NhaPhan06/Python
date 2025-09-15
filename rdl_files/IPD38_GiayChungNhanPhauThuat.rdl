@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="ID_DEV_EHOS_DBDataSet6">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+<ConnectString/>
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>87829fb3-e076-441b-b924-cfd2bf5f69d1</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>ID_DEV_EHOS_DBDataSet6</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="MAYTE">
+          <DataField>MAYTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TENBENHNHAN">
+          <DataField>TENBENHNHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GIOITINH">
+          <DataField>GIOITINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DIACHI">
+          <DataField>DIACHI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THOIGIANVAOVIEN">
+          <DataField>THOIGIANVAOVIEN</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="THOIGIANRAVIEN">
+          <DataField>THOIGIANRAVIEN</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="SOLUUTRU">
+          <DataField>SOLUUTRU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ICD_TRUOCPHAUTHUAT_MOTA">
+          <DataField>ICD_TRUOCPHAUTHUAT_MOTA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PHAUTHUAT">
+          <DataField>PHAUTHUAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THUTHUAT">
+          <DataField>THUTHUAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ICD_SAUPHAUTHUAT_MOTA">
+          <DataField>ICD_SAUPHAUTHUAT_MOTA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGAYTHUCHIEN">
+          <DataField>NGAYTHUCHIEN</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="NHOMMAU">
+          <DataField>NHOMMAU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YEUTORH">
+          <DataField>YEUTORH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PPVOCAM">
+          <DataField>PPVOCAM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TENBENHVIEN">
+          <DataField>TENBENHVIEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DIACHIBV">
+          <DataField>DIACHIBV</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BACSIDIEUTRI">
+          <DataField>BACSIDIEUTRI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CANTHIEPPHAUTHUAT">
+          <DataField>CANTHIEPPHAUTHUAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>_DEV_EHOS_DBDataSet6</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\KhoaLNN\Documents\Visual Studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\_DEV_EHOS_DBDataSet6.xsd</rd:SchemaPath>
+        <rd:TableName>GiayChungNhanPhauThuat</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>GiayChungNhanPhauThuatTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Subreport Name="Subreport3">
+            <ReportName>IPD38_GiayChungNhanPhauThuat_P2</ReportName>
+            <Top>1.4675in</Top>
+            <Left>0.01042in</Left>
+            <Height>1.4375in</Height>
+            <Width>8in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Subreport Name="Subreport4">
+            <ReportName>IPD38_GiayChungNhanPhauThuat_P1</ReportName>
+            <Parameters>
+              <Parameter Name="TENBENHVIEN">
+                <Value>=Parameters!TENBENHVIEN.Value</Value>
+              </Parameter>
+              <Parameter Name="DIACHI">
+                <Value>=Parameters!DIACHI.Value</Value>
+              </Parameter>
+              <Parameter Name="TENPHIEU">
+                <Value>=Parameters!TENPHIEU.Value</Value>
+              </Parameter>
+            </Parameters>
+            <Height>1.4375in</Height>
+            <Width>8in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+        </ReportItems>
+        <Height>2.94458in</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>8.27in</Width>
+      <Page>
+        <PageHeader>
+          <Height>0.04167in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <PageHeight>5.83in</PageHeight>
+        <PageWidth>8.27in</PageWidth>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="TENBENHVIEN">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DIACHI">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TENPHIEU">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>bc7c0feb-25f8-432b-b711-c02ee5b7986d</rd:ReportID>
+</Report>

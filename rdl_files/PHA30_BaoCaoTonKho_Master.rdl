@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+<ConnectString/>
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>33c8b139-174a-4174-9ad1-f7939d4de9f9</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>PHA30_BAOCAOTONKHO_Master</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="PHAMVI">
+          <DataField>PHAMVI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUONDUOC">
+          <DataField>NGUONDUOC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Rectangle Name="RectReportFooterSection1">
+            <ReportItems>
+              <Textbox Name="Text6">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Người báo cáo</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>(Ký, ghi rõ họ tên)</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.41348in</Top>
+                <Left>4.94306in</Left>
+                <Height>0.52348in</Height>
+                <Width>2.60042in</Width>
+                <Style>
+                  <Border />
+                  <TopBorder>
+                    <Style>None</Style>
+                  </TopBorder>
+                  <BottomBorder>
+                    <Style>None</Style>
+                  </BottomBorder>
+                  <LeftBorder>
+                    <Style>None</Style>
+                  </LeftBorder>
+                  <RightBorder>
+                    <Style>None</Style>
+                  </RightBorder>
+                </Style>
+              </Textbox>
+              <Textbox Name="Text2">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Trưởng khoa</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>(Ký, ghi rõ họ tên)</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.41348in</Top>
+                <Height>0.52348in</Height>
+                <Width>2.44071in</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <Border />
+                  <TopBorder>
+                    <Style>None</Style>
+                  </TopBorder>
+                  <BottomBorder>
+                    <Style>None</Style>
+                  </BottomBorder>
+                  <LeftBorder>
+                    <Style>None</Style>
+                  </LeftBorder>
+                  <RightBorder>
+                    <Style>None</Style>
+                  </RightBorder>
+                </Style>
+              </Textbox>
+              <Textbox Name="NgayChiDinh1">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Ngày </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>11pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=FORMAT(Cdate(today), "dd")</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>11pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> Tháng </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>11pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=FORMAT(Cdate(today), "MM")</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>11pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> Năm </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>11pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=FORMAT(Cdate(today), "yyyy")</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>11pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve">  </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>11pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.09917in</Top>
+                <Left>4.94306in</Left>
+                <Height>0.17348in</Height>
+                <Width>2.60042in</Width>
+                <ZIndex>2</ZIndex>
+                <Style>
+                  <Border />
+                  <TopBorder>
+                    <Style>None</Style>
+                  </TopBorder>
+                  <BottomBorder>
+                    <Style>None</Style>
+                  </BottomBorder>
+                  <LeftBorder>
+                    <Style>None</Style>
+                  </LeftBorder>
+                  <RightBorder>
+                    <Style>None</Style>
+                  </RightBorder>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <Top>2.995in</Top>
+            <Left>0.02in</Left>
+            <Height>1.74681in</Height>
+            <Width>7.54348in</Width>
+            <Style>
+              <BackgroundColor>White</BackgroundColor>
+            </Style>
+          </Rectangle>
+          <Textbox Name="Field3">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!TENBENHVIEN.Value</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>11pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.02778in</Top>
+            <Left>0.02in</Left>
+            <Height>0.25in</Height>
+            <Width>3.26696in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border />
+              <TopBorder>
+                <Style>None</Style>
+              </TopBorder>
+              <BottomBorder>
+                <Style>None</Style>
+              </BottomBorder>
+              <LeftBorder>
+                <Style>None</Style>
+              </LeftBorder>
+              <RightBorder>
+                <Style>None</Style>
+              </RightBorder>
+            </Style>
+          </Textbox>
+          <Textbox Name="Field7">
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=UCase(Parameters!TENPHIEU.Value)</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>18pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.75778in</Top>
+            <Left>0.02in</Left>
+            <Height>0.33348in</Height>
+            <Width>7.54348in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border />
+              <TopBorder>
+                <Style>None</Style>
+              </TopBorder>
+              <BottomBorder>
+                <Style>None</Style>
+              </BottomBorder>
+              <LeftBorder>
+                <Style>None</Style>
+              </LeftBorder>
+              <RightBorder>
+                <Style>None</Style>
+              </RightBorder>
+            </Style>
+          </Textbox>
+          <Textbox Name="Text1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Mẫu số 06 BV</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.02778in</Top>
+            <Left>5.38098in</Left>
+            <Height>0.25in</Height>
+            <Width>2.1825in</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border />
+              <TopBorder>
+                <Style>None</Style>
+              </TopBorder>
+              <BottomBorder>
+                <Style>None</Style>
+              </BottomBorder>
+              <LeftBorder>
+                <Style>None</Style>
+              </LeftBorder>
+              <RightBorder>
+                <Style>None</Style>
+              </RightBorder>
+            </Style>
+          </Textbox>
+          <Textbox Name="Text16">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Số/No. :</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.27778in</Top>
+            <Left>5.38098in</Left>
+            <Height>0.25in</Height>
+            <Width>2.1825in</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border />
+              <TopBorder>
+                <Style>None</Style>
+              </TopBorder>
+              <BottomBorder>
+                <Style>None</Style>
+              </BottomBorder>
+              <LeftBorder>
+                <Style>None</Style>
+              </LeftBorder>
+              <RightBorder>
+                <Style>None</Style>
+              </RightBorder>
+            </Style>
+          </Textbox>
+          <Textbox Name="ThangNam1">
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Thời gian từ </Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>13pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Format(CDate(Parameters!TUNGAY.Value),"dd/MM/yyyy")</Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>13pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value> - </Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>13pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Format(CDate(Parameters!DENNGAY.Value),"dd/MM/yyyy")</Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>13pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>1.12778in</Top>
+            <Left>0.02in</Left>
+            <Height>0.25in</Height>
+            <Width>7.54348in</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border />
+              <TopBorder>
+                <Style>None</Style>
+              </TopBorder>
+              <BottomBorder>
+                <Style>None</Style>
+              </BottomBorder>
+              <LeftBorder>
+                <Style>None</Style>
+              </LeftBorder>
+              <RightBorder>
+                <Style>None</Style>
+              </RightBorder>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Text22">
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Nguồn dược: </Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Fields!NGUONDUOC.Value</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>1.37778in</Top>
+            <Left>0.02in</Left>
+            <Height>0.25in</Height>
+            <Width>7.54348in</Width>
+            <ZIndex>6</ZIndex>
+            <Style>
+              <Border />
+              <TopBorder>
+                <Style>None</Style>
+              </TopBorder>
+              <BottomBorder>
+                <Style>None</Style>
+              </BottomBorder>
+              <LeftBorder>
+                <Style>None</Style>
+              </LeftBorder>
+              <RightBorder>
+                <Style>None</Style>
+              </RightBorder>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="PhamVi1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Fields!PHAMVI.Value</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>11pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.27778in</Top>
+            <Left>0.02in</Left>
+            <Height>0.2in</Height>
+            <Width>3.26696in</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <Border />
+              <TopBorder>
+                <Style>None</Style>
+              </TopBorder>
+              <BottomBorder>
+                <Style>None</Style>
+              </BottomBorder>
+              <LeftBorder>
+                <Style>None</Style>
+              </LeftBorder>
+              <RightBorder>
+                <Style>None</Style>
+              </RightBorder>
+            </Style>
+          </Textbox>
+          <Subreport Name="Subreport1">
+            <ReportName>PHA30_BaoCaoTonKho_Detail</ReportName>
+            <Top>1.69722in</Top>
+            <Left>0.02in</Left>
+            <Height>1.22833in</Height>
+            <Width>8.54348in</Width>
+            <ZIndex>8</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+        </ReportItems>
+        <Height>4.94804in</Height>
+        <Style />
+      </Body>
+      <Width>8.56348in</Width>
+      <Page>
+        <PageHeader>
+          <Height>0.23821in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <Style />
+        </PageHeader>
+        <PageHeight>11.69in</PageHeight>
+        <PageWidth>8.27in</PageWidth>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="TUNGAY">
+      <DataType>DateTime</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>TUNGAY</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DENNGAY">
+      <DataType>DateTime</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>DENNGAY</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TENBENHVIEN">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TENPHIEU">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>b9b59975-70eb-46ba-b556-32cb7420f8c5</rd:ReportID>
+</Report>

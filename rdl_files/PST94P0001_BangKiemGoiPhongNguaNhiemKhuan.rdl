@@ -1,0 +1,2368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>ac1bb8de-a39b-44f5-9170-9095a9dfd122</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@CHECKCODE">
+            <Value>=Parameters!CHECKCODE.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@MABENHVIEN">
+            <Value>=Parameters!MABENHVIEN.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>PST94P0001_BangKiemGoiPhongNguaNhiemKhuan</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="MAYTE">
+          <DataField>MAYTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TENBENHNHAN">
+          <DataField>TENBENHNHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGAYTHUCHIEN">
+          <DataField>NGAYTHUCHIEN</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="NGAYRUT">
+          <DataField>NGAYRUT</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="NGUOITHUCHIEN_ID">
+          <DataField>NGUOITHUCHIEN_ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DUOIDON_CHECK">
+          <DataField>DUOIDON_CHECK</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CANH_CHECK">
+          <DataField>CANH_CHECK</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="DUI_CHECK">
+          <DataField>DUI_CHECK</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="VITRIKHAC_CHECK">
+          <DataField>VITRIKHAC_CHECK</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="DD_TRAI">
+          <DataField>DD_TRAI</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="DD_PHAI">
+          <DataField>DD_PHAI</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CANH_TRAI">
+          <DataField>CANH_TRAI</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CANH_PHAI">
+          <DataField>CANH_PHAI</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="DUI_TRAI">
+          <DataField>DUI_TRAI</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="DUI_PHAI">
+          <DataField>DUI_PHAI</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="LYDOCHON">
+          <DataField>LYDOCHON</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VITRIKHAC_TEXT">
+          <DataField>VITRIKHAC_TEXT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RDL_01">
+          <DataField>RDL_01</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="RDL_02">
+          <DataField>RDL_02</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="RDL_03">
+          <DataField>RDL_03</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="RDL_04">
+          <DataField>RDL_04</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="TENNHANVIEN">
+          <DataField>TENNHANVIEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TGTHUCHIEN">
+          <DataField>TGTHUCHIEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TGRUT">
+          <DataField>TGRUT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Rectangle Name="Rectangle1">
+            <ReportItems>
+              <Textbox Name="Textbox7">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>[CLABS] BẢNG KIỂM GÓI PHÒNG NGỪA NHIỄM KHUẨN HUYẾT LIÊN QUAN ỐNG THÔNG TĨNH MẠCH TRUNG TÂM</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox7</rd:DefaultName>
+                <Top>0.29633cm</Top>
+                <Left>2.7305cm</Left>
+                <Height>1.41817cm</Height>
+                <Width>14.68967cm</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox8">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>CLABSI CARE BUNDLE CHECKLIST</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>14pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>(Bảng kiểm để thực hiện/ for implementation)</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>14pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox8</rd:DefaultName>
+                <Top>1.72508cm</Top>
+                <Height>1.15033cm</Height>
+                <Width>19.66383cm</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Tablix Name="Tablix1">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>8.24244cm</Width>
+                    </TablixColumn>
+                    <TablixColumn>
+                      <Width>7.02733cm</Width>
+                    </TablixColumn>
+                    <TablixColumn>
+                      <Width>3.94956cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>2.0955cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle2">
+                              <ReportItems>
+                                <Textbox Name="Textbox137">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Họ và tên người bệnh/ </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Patient's full name:  </Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=Fields!TENBENHNHAN.Value</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox137</rd:DefaultName>
+                                  <Top>0.14746cm</Top>
+                                  <Left>0.1905cm</Left>
+                                  <Height>1.10067cm</Height>
+                                  <Width>14.78293cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox138">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Số PRN/ PRN: </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=Fields!MAYTE.Value</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox138</rd:DefaultName>
+                                  <Top>1.24813cm</Top>
+                                  <Left>0.1905cm</Left>
+                                  <Height>0.69991cm</Height>
+                                  <Width>14.78293cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <RightBorder>
+                                  <Style>Solid</Style>
+                                </RightBorder>
+                              </Style>
+                            </Rectangle>
+                            <ColSpan>2</ColSpan>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell />
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox155">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Nhãn người bệnh</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value> (Patient's Label)</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox155</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <BackgroundColor>Silver</BackgroundColor>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.81167cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox19">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>  Ngày thực hiện/ </Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>Implementation date</Value>
+                                      <Style>
+                                        <FontStyle>Italic</FontStyle>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>:</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox19</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <RightBorder>
+                                  <Style>Solid</Style>
+                                </RightBorder>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="TGTHUCHIEN">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!TGTHUCHIEN.Value</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>11pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>TGTHUCHIEN</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <ColSpan>2</ColSpan>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell />
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.81167cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox25">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>  Người thực hiện/ </Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>The operator</Value>
+                                      <Style>
+                                        <FontStyle>Italic</FontStyle>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>:</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox25</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <RightBorder>
+                                  <Style>Solid</Style>
+                                </RightBorder>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="TGRUT">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!TGRUT.Value</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>11pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>TGRUT</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <ColSpan>2</ColSpan>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell />
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>3.75383cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle4">
+                              <ReportItems>
+                                <Textbox Name="Textbox139">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Vị trí đặt/ Insertion site:</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox138</rd:DefaultName>
+                                  <Top>0.127cm</Top>
+                                  <Left>0.1905cm</Left>
+                                  <Height>0.69991cm</Height>
+                                  <Width>19.02883cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox140">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!DUOIDON_CHECK.Value = "1", Chr(254), Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>TM Dưới đòn/ </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Subclavian</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox138</rd:DefaultName>
+                                  <Top>0.82691cm</Top>
+                                  <Left>0.1905cm</Left>
+                                  <Height>0.69991cm</Height>
+                                  <Width>5.99016cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox141">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!DD_TRAI.Value = "1", Chr(254), Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Trái/ </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Left</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value> - </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!DD_PHAI.Value = "1", Chr(254), Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Phải/ </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Right</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox138</rd:DefaultName>
+                                  <Top>0.82691cm</Top>
+                                  <Left>6.18066cm</Left>
+                                  <Height>0.69991cm</Height>
+                                  <Width>13.03866cm</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox142">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!CANH_CHECK.Value = "1", Chr(254), Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>TM Cảnh/ </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Jugular</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox138</rd:DefaultName>
+                                  <Top>1.52682cm</Top>
+                                  <Left>0.1905cm</Left>
+                                  <Height>0.69991cm</Height>
+                                  <Width>5.99016cm</Width>
+                                  <ZIndex>3</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox143">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!CANH_TRAI.Value = "1", Chr(254), Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Trái/ </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Left</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value> - </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!CANH_PHAI.Value = "1", Chr(254), Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Phải/ </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Right</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox138</rd:DefaultName>
+                                  <Top>1.52682cm</Top>
+                                  <Left>6.18066cm</Left>
+                                  <Height>0.69991cm</Height>
+                                  <Width>13.03867cm</Width>
+                                  <ZIndex>4</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox144">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!DUI_CHECK.Value = "1", Chr(254), Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>TM Đùi/</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value> Femoral</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox138</rd:DefaultName>
+                                  <Top>2.22673cm</Top>
+                                  <Left>0.1905cm</Left>
+                                  <Height>0.69991cm</Height>
+                                  <Width>5.99016cm</Width>
+                                  <ZIndex>5</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox145">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!DUI_TRAI.Value = "1", Chr(254), Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Trái/ </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Left</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value> - </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!DUI_PHAI.Value = "1", Chr(254), Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Phải/ </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Right (Lý do chọn: )</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox138</rd:DefaultName>
+                                  <Top>2.22673cm</Top>
+                                  <Left>6.18066cm</Left>
+                                  <Height>0.69991cm</Height>
+                                  <Width>13.03867cm</Width>
+                                  <ZIndex>6</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox146">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!VITRIKHAC_CHECK.Value = "1", Chr(254), Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Vị trí khác/</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value> Other.</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox138</rd:DefaultName>
+                                  <Top>2.92664cm</Top>
+                                  <Left>0.19051cm</Left>
+                                  <Height>0.69991cm</Height>
+                                  <Width>5.99015cm</Width>
+                                  <ZIndex>7</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox147">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=First(Fields!VITRIKHAC_TEXT.Value)</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox138</rd:DefaultName>
+                                  <Top>2.92664cm</Top>
+                                  <Left>6.18066cm</Left>
+                                  <Height>0.69991cm</Height>
+                                  <Width>13.03866cm</Width>
+                                  <ZIndex>8</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                              </Style>
+                            </Rectangle>
+                            <ColSpan>3</ColSpan>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell />
+                        <TablixCell />
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.81167cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox22">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>  Ngày rút/ </Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>date of CVC removing: </Value>
+                                      <Style>
+                                        <FontStyle>Italic</FontStyle>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>=Fields!TGRUT.Value</Value>
+                                      <Style>
+                                        <FontStyle>Italic</FontStyle>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox22</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <ColSpan>3</ColSpan>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell />
+                        <TablixCell />
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DataSet1</DataSetName>
+                <Top>3.24908cm</Top>
+                <Left>0.27517cm</Left>
+                <Height>8.28434cm</Height>
+                <Width>19.21933cm</Width>
+                <ZIndex>2</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                  </Border>
+                </Style>
+              </Tablix>
+              <Tablix Name="Tablix3">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>14.15849cm</Width>
+                    </TablixColumn>
+                    <TablixColumn>
+                      <Width>5.06084cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.93867cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox52">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>KHI ĐẶT ỐNG THÔNG TMTT/ </Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>14pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>Insertion bundle</Value>
+                                      <Style>
+                                        <FontStyle>Italic</FontStyle>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>14pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox52</rd:DefaultName>
+                              <Style>
+                                <Border />
+                                <BackgroundColor>Silver</BackgroundColor>
+                                <VerticalAlign>Middle</VerticalAlign>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <ColSpan>2</ColSpan>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell />
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>2.34488cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle29">
+                              <ReportItems>
+                                <Textbox Name="Textbox148">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Mỗi thành viên ekip thực hiện thủ thuật mặc đúng và đủ phương tiện phòng hộ cá nhân vô khuẩn (Có chỉ báo chất lượng tiệt khuẩn đạt yêu cầu).</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Each member participating in insertion fully and properly wear sterile PPE (Have satisfactory chemical indicator).</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox145</rd:DefaultName>
+                                  <Left>0.76764cm</Left>
+                                  <Height>2.23904cm</Height>
+                                  <Width>13.39085cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox149">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>1.   </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox146</rd:DefaultName>
+                                  <Left>0.04798cm</Left>
+                                  <Height>0.6934cm</Height>
+                                  <Width>0.71967cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <RightBorder>
+                                  <Style>Solid</Style>
+                                </RightBorder>
+                              </Style>
+                            </Rectangle>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle9">
+                              <ReportItems>
+                                <Textbox Name="Textbox167">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!RDL_01.Value="0", Chr(254),Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Có/ Yes</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox167</rd:DefaultName>
+                                  <Top>0.49064cm</Top>
+                                  <Left>0.58863cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>4.36638cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox168">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!RDL_01.Value="1", Chr(254),Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Không/ No</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox167</rd:DefaultName>
+                                  <Top>1.17632cm</Top>
+                                  <Left>0.58863cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>4.36638cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                              </Style>
+                            </Rectangle>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>2.23904cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle30">
+                              <ReportItems>
+                                <Textbox Name="Textbox150">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Sử dụng dụng cụ đặt ống thông TMTT vô khuẩn (có chỉ báo chất lượng tiệt khuẩn đạt yêu cầu).</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Use sterile medical instrument for CVC insertion (have satisfactory chemical indicator).</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox145</rd:DefaultName>
+                                  <Left>0.76764cm</Left>
+                                  <Height>2.23904cm</Height>
+                                  <Width>13.39085cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox151">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>2.   </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox146</rd:DefaultName>
+                                  <Left>0.04798cm</Left>
+                                  <Height>0.6934cm</Height>
+                                  <Width>0.71967cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <RightBorder>
+                                  <Style>Solid</Style>
+                                </RightBorder>
+                              </Style>
+                            </Rectangle>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle10">
+                              <ReportItems>
+                                <Textbox Name="Textbox169">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!RDL_02.Value="0", Chr(254),Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Có/ Yes</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox167</rd:DefaultName>
+                                  <Top>0.40597cm</Top>
+                                  <Left>0.58863cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>4.36638cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox170">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!RDL_02.Value="1", Chr(254),Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Không/ No</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox167</rd:DefaultName>
+                                  <Top>1.09165cm</Top>
+                                  <Left>0.58863cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>4.36638cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                              </Style>
+                            </Rectangle>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>2.23904cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle31">
+                              <ReportItems>
+                                <Textbox Name="Textbox152">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Sát khuẩn da bằng ehlorhexidine - gluconate gốc cồn 2% trước khi đặt</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Disinfect skin with alcohol-based 2% chlorhexidine-gluconate before insertion.</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox145</rd:DefaultName>
+                                  <Left>0.76764cm</Left>
+                                  <Height>2.23904cm</Height>
+                                  <Width>13.39085cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox153">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>3.   </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox146</rd:DefaultName>
+                                  <Left>0.04798cm</Left>
+                                  <Height>1.2649cm</Height>
+                                  <Width>0.71967cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                                <RightBorder>
+                                  <Style>Solid</Style>
+                                </RightBorder>
+                              </Style>
+                            </Rectangle>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle11">
+                              <ReportItems>
+                                <Textbox Name="Textbox171">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!RDL_03.Value="0", Chr(254),Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Có/ Yes</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox167</rd:DefaultName>
+                                  <Top>0.40597cm</Top>
+                                  <Left>0.58863cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>4.36638cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox172">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!RDL_03.Value="1", Chr(254),Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Không/ No</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox167</rd:DefaultName>
+                                  <Top>1.09165cm</Top>
+                                  <Left>0.58863cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>4.36638cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <BottomBorder>
+                                  <Style>Solid</Style>
+                                </BottomBorder>
+                              </Style>
+                            </Rectangle>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>2.78937cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle32">
+                              <ReportItems>
+                                <Textbox Name="Textbox154">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Sử dụng băng bán thấm trong suốt vô trùng để che vị trí chèn ống thông TMTT. Nếu ghi ngờ dị ứng phải thay thế băng gạc vô khuẩn.</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Using a sterile transparent semi-permeable dressing to cover the CVC insertion site. An alternative dressing must be used if allergy is suspected. If an allergy is suspected, replace it with a sterile gauze.</Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox145</rd:DefaultName>
+                                  <Left>0.76764cm</Left>
+                                  <Height>2.78937cm</Height>
+                                  <Width>13.39085cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox156">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>4.   </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox146</rd:DefaultName>
+                                  <Left>0.04798cm</Left>
+                                  <Height>0.68847cm</Height>
+                                  <Width>0.71967cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <RightBorder>
+                                  <Style>Solid</Style>
+                                </RightBorder>
+                              </Style>
+                            </Rectangle>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle12">
+                              <ReportItems>
+                                <Textbox Name="Textbox173">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!RDL_04.Value="0", Chr(254),Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Có/ Yes</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox167</rd:DefaultName>
+                                  <Top>0.77415cm</Top>
+                                  <Left>0.58863cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>4.36638cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox174">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!RDL_04.Value="1", Chr(254),Chr(111))</Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Wingdings</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>Không/ No</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox167</rd:DefaultName>
+                                  <Top>1.45983cm</Top>
+                                  <Left>0.58863cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>4.36638cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border />
+                              </Style>
+                            </Rectangle>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <Top>12.02267cm</Top>
+                <Left>0.27517cm</Left>
+                <Height>10.551cm</Height>
+                <Width>19.21933cm</Width>
+                <ZIndex>3</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                  </Border>
+                </Style>
+              </Tablix>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>0.11853cm</Top>
+            <Left>0.0762cm</Left>
+            <Height>22.81767cm</Height>
+            <Width>19.66383cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+        </ReportItems>
+        <Height>23.26017cm</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>19.873cm</Width>
+      <Page>
+        <PageFooter>
+          <Height>11.43mm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox81">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!PageNumber</Value>
+                      <Style>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>11pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox81</rd:DefaultName>
+              <Top>0.30692cm</Top>
+              <Left>0.1397cm</Left>
+              <Height>0.635cm</Height>
+              <Width>19.66383cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>0.5cm</LeftMargin>
+        <RightMargin>0.5cm</RightMargin>
+        <TopMargin>0.5cm</TopMargin>
+        <BottomMargin>0.5cm</BottomMargin>
+        <ColumnSpacing>0.13cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="CHECKCODE">
+      <DataType>String</DataType>
+      <Prompt>CHECKCODE</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="MABENHVIEN">
+      <DataType>String</DataType>
+      <Prompt>MABENHVIEN</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>67b8d583-b442-4197-9e62-5a99ceef4e3b</rd:ReportID>
+</Report>

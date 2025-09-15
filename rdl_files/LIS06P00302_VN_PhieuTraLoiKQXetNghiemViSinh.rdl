@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+<ConnectString/>
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>15252377-a326-4f77-b0e2-7942e4214cb5</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>LIS06P00302_PTLKQXNVS</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="URLIMAGES">
+          <DataField>URLIMAGES</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IMAGES_ID">
+          <DataField>IMAGES_ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TENHINH">
+          <DataField>TENHINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Rectangle Name="Rectangle2">
+            <ReportItems>
+              <Tablix Name="Tablix8">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>3.40654in</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>1.32427in</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Image Name="Image5">
+                              <Source>External</Source>
+                              <Value>=Parameters!URL_IMAGES.Value &amp; Parameters!MAYTE.Value &amp; "\" &amp;Fields!URLIMAGES.Value</Value>
+                              <Sizing>Fit</Sizing>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>1pt</PaddingLeft>
+                                <PaddingRight>3pt</PaddingRight>
+                                <PaddingTop>1pt</PaddingTop>
+                                <PaddingBottom>1pt</PaddingBottom>
+                              </Style>
+                            </Image>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Group1" />
+                      <TablixMembers>
+                        <TablixMember />
+                      </TablixMembers>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <Top>0.1549in</Top>
+                <Left>0.05083in</Left>
+                <Height>1.32427in</Height>
+                <Width>3.40654in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Tablix>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Left>0.125in</Left>
+            <Height>1.75in</Height>
+            <Width>6.9914in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+        </ReportItems>
+        <Height>1.91667in</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>7.3125in</Width>
+      <Page>
+        <PageWidth>8in</PageWidth>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="URL_IMAGES">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="MAYTE">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>3a1bcbec-5ce2-41c1-890a-acbfc8d04ccf</rd:ReportID>
+</Report>

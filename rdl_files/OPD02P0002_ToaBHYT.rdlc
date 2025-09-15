@@ -1,0 +1,2036 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=HG-SGHIS2-DB02;Initial Catalog=HOANMY_SAIGON_HIS</ConnectString>
+        <Prompt>Specify a user name and password for data source DataSource1:</Prompt>
+      </ConnectionProperties>
+      <rd:SecurityType>DataBase</rd:SecurityType>
+      <rd:DataSourceID>81b02af2-4eb9-41ad-96de-377d4da630cd</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet2">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@MABENHVIEN">
+            <Value>=Parameters!MABENHVIEN.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@SOTOATHUOC">
+            <Value>=Parameters!SOTOATHUOC.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@LOAITOATHUOC">
+            <Value>=Parameters!LOAITOATHUOC.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@SOTIEPNHAN">
+            <Value>=Parameters!SOTIEPNHAN.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>OPD02P00101_DTBHYT</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="TENBENHNHAN">
+          <DataField>TENBENHNHAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAYTE">
+          <DataField>MAYTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GioiTinh">
+          <DataField>GioiTinh</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DiaChi">
+          <DataField>DiaChi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SODIENTHOAI">
+          <DataField>SODIENTHOAI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SOLUUTRU">
+          <DataField>SOLUUTRU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Tuoi">
+          <DataField>Tuoi</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NAMSINH">
+          <DataField>NAMSINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SOTHE">
+          <DataField>SOTHE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHANDOANVAOKHOA">
+          <DataField>CHANDOANVAOKHOA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SOLUONGBUOICHIEU">
+          <DataField>SOLUONGBUOICHIEU</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="CoQuan">
+          <DataField>CoQuan</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BacSi">
+          <DataField>BacSi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGAYTAIKHAM">
+          <DataField>NGAYTAIKHAM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LOIDAN">
+          <DataField>LOIDAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUOILIENHE_CMND">
+          <DataField>NGUOILIENHE_CMND</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TENPHONGBAN">
+          <DataField>TENPHONGBAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GHICHU">
+          <DataField>GHICHU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TENDUOC">
+          <DataField>TENDUOC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SOLUONGTONG">
+          <DataField>SOLUONGTONG</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DONVITINH">
+          <DataField>DONVITINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DUONGDUNG">
+          <DataField>DUONGDUNG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SOLAN">
+          <DataField>SOLAN</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CACHSUDUNG">
+          <DataField>CACHSUDUNG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SONGAY">
+          <DataField>SONGAY</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="SOLUONGBUOISANG">
+          <DataField>SOLUONGBUOISANG</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SOLUONGBUOITRUA">
+          <DataField>SOLUONGBUOITRUA</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="Thang">
+          <DataField>Thang</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="BHYT">
+          <DataField>BHYT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SOLUONGBUOITOI">
+          <DataField>SOLUONGBUOITOI</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="STT">
+          <DataField>STT</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DienThoaiBenhVien">
+          <DataField>DienThoaiBenhVien</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DiaChiBenhVien">
+          <DataField>DiaChiBenhVien</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGUOILIENHE">
+          <DataField>NGUOILIENHE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGAYBAOCAO">
+          <DataField>NGAYBAOCAO</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Chu">
+          <DataField>Chu</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KHAMBENH_ID">
+          <DataField>KHAMBENH_ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="MALOAIDUOC">
+          <DataField>MALOAIDUOC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BARCODE">
+          <DataField>BARCODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CAHCDUNG">
+          <DataField>CAHCDUNG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="QUANHE">
+          <DataField>QUANHE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CMND">
+          <DataField>CMND</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CANNANG">
+          <DataField>CANNANG</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="LOIDANCHOTOA">
+          <Value>LOIDANCHOTOA</Value>
+        </Field>
+        <Field Name="NGAYCHOTOA">
+          <DataField>NGAYCHOTOA</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NGAYHEN_NGHIOM">
+          <DataField>NGAYHEN_NGHIOM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="THANGCHOTOA">
+          <DataField>THANGCHOTOA</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SOLANKHAM">
+          <DataField>SOLANKHAM</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="NAMCHOTOA">
+          <DataField>NAMCHOTOA</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CK">
+          <DataField>CK</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="CHUKY">
+          <DataField>CHUKY</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+        <Field Name="aaa">
+          <DataField>aaa</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SOTHUTUTOA">
+          <DataField>SOTHUTUTOA</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="LOIDANCHOTOA_1">
+          <DataField>LOIDANCHOTOA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DOITUONG">
+          <DataField>DOITUONG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CLS">
+          <DataField>CLS</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="THOIGIANKHAM">
+          <DataField>THOIGIANKHAM</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="SoTT_HoSo_BHYT">
+          <DataField>SoTT_HoSo_BHYT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LYDODENKHAM">
+          <DataField>LYDODENKHAM</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="MATOATHUOCDAYCONG">
+          <DataField>MATOATHUOCDAYCONG</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="MATOALC">
+          <DataField>MATOALC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DONVILIEUDUNG">
+          <DataField>DONVILIEUDUNG</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="TENDONVIQUYDOI">
+          <DataField>TENDONVIQUYDOI</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="SODIENTHOAI_BENHVIEN">
+          <DataField>SODIENTHOAI_BENHVIEN</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="WEBSITE_BENHVIEN">
+          <DataField>WEBSITE_BENHVIEN</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Rectangle Name="Rectangle1">
+            <ReportItems>
+              <Tablix Name="Tablix1">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>5.26127in</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.41082in</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="RectDetailArea1">
+                              <ReportItems>
+                                <Textbox Name="Textbox1">
+                                  <CanGrow>true</CanGrow>
+                                  <CanShrink>true</CanShrink>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!STT.Value</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>11pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>. </Value>
+                                          <Style>
+                                            <FontStyle>Italic</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>11pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=Fields!TENDUOC.Value</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontSize>11pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox1</rd:DefaultName>
+                                  <Top>0.03526cm</Top>
+                                  <Height>0.43238cm</Height>
+                                  <Width>10.85957cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox3">
+                                  <CanGrow>true</CanGrow>
+                                  <CanShrink>true</CanShrink>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!SONGAY.Value</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontWeight>Normal</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value> ngày - Ngày </Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontWeight>Normal</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=Fields!SOLAN.Value</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontWeight>Normal</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value> lần : </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=iif(isnothing(Fields!SOLUONGBUOISANG.Value), "", "Sáng: " &amp; " " &amp; Replace(Fields!SOLUONGBUOISANG.Value, ".", ","))</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=iif(isnothing(Fields!SOLUONGBUOISANG.Value), "", Fields!TENDONVIQUYDOI.Value &amp; "; ")</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=iif(isnothing(Fields!SOLUONGBUOITRUA.Value), "", "Trưa: " &amp; "" &amp; Replace(Fields!SOLUONGBUOITRUA.Value, ".", ","))</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=iif(isnothing(Fields!SOLUONGBUOITRUA.Value), "", Fields!TENDONVIQUYDOI.Value &amp; "; ")</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=iif(isnothing(Fields!SOLUONGBUOICHIEU.Value), "", "Chiều: " &amp; "" &amp; Replace(Fields!SOLUONGBUOICHIEU.Value, ".", ","))</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=iif(isnothing(Fields!SOLUONGBUOICHIEU.Value), "", Fields!TENDONVIQUYDOI.Value &amp; "; ")</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=iif(isnothing(Fields!SOLUONGBUOITOI.Value), "", "Tối: " &amp; "" &amp; Replace(Fields!SOLUONGBUOITOI.Value, ".", ","))</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=iif(isnothing(Fields!SOLUONGBUOITOI.Value), "",Fields!TENDONVIQUYDOI.Value)</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=Fields!CAHCDUNG.Value</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontWeight>Normal</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value> . Ghi chú: </Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontWeight>Normal</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=Fields!GHICHU.Value</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontWeight>Normal</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox1</rd:DefaultName>
+                                  <Top>0.57347cm</Top>
+                                  <Left>0.01699cm</Left>
+                                  <Height>0.47cm</Height>
+                                  <Width>13.34663cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Dashed</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox2">
+                                  <CanGrow>true</CanGrow>
+                                  <CanShrink>true</CanShrink>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=iif(Fields!MALOAIDUOC.Value = "N02A", "", Fields!SOLUONGTONG.Value)</Value>
+                                          <Style>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=iif(Fields!MALOAIDUOC.Value = "N02A", Fields!Chu.Value, "")</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=Fields!DONVITINH.Value</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve">   </Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=Fields!DUONGDUNG.Value</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontWeight>Normal</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>Times New Roman</FontFamily>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Right</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox1</rd:DefaultName>
+                                  <Left>10.85957cm</Left>
+                                  <Height>0.43238cm</Height>
+                                  <Width>2.46044cm</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Detail" />
+                      <TablixMembers>
+                        <TablixMember />
+                      </TablixMembers>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DataSet2</DataSetName>
+                <Top>2.34309in</Top>
+                <Left>0.08751in</Left>
+                <Height>0.41082in</Height>
+                <Width>5.26127in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </Tablix>
+              <Rectangle Name="Rectangle2">
+                <ReportItems>
+                  <Textbox Name="Textbox23">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Ngày </Value>
+                            <Style>
+                              <FontStyle>Italic</FontStyle>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                          <TextRun>
+                            <Value>=Fields!NGAYCHOTOA.Value</Value>
+                            <Style>
+                              <FontStyle>Italic</FontStyle>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                              <Format>00</Format>
+                            </Style>
+                          </TextRun>
+                          <TextRun>
+                            <Value>  tháng </Value>
+                            <Style>
+                              <FontStyle>Italic</FontStyle>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                          <TextRun>
+                            <Value>=Fields!THANGCHOTOA.Value</Value>
+                            <Style>
+                              <FontStyle>Italic</FontStyle>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                              <Format>00</Format>
+                            </Style>
+                          </TextRun>
+                          <TextRun>
+                            <Value>  năm </Value>
+                            <Style>
+                              <FontStyle>Italic</FontStyle>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                          <TextRun>
+                            <Value>=Fields!NAMCHOTOA.Value</Value>
+                            <Style>
+                              <FontStyle>Italic</FontStyle>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Bác sĩ</Value>
+                            <Style>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox23</rd:DefaultName>
+                    <Left>3.22183in</Left>
+                    <Height>0.49651in</Height>
+                    <Width>2.05821in</Width>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox20">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Tái khám ngày:</Value>
+                            <Style>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                          <TextRun>
+                            <Value xml:space="preserve"> </Value>
+                            <Style>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                            </Style>
+                          </TextRun>
+                          <TextRun>
+                            <Value>=Fields!NGAYTAIKHAM.Value</Value>
+                            <Style>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                          <TextRun>
+                            <Value xml:space="preserve">   </Value>
+                            <Style>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Left</TextAlign>
+                        </Style>
+                      </Paragraph>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Tái khám chuyên khoa: </Value>
+                            <Style>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                            </Style>
+                          </TextRun>
+                          <TextRun>
+                            <Value>=Replace(Fields!TENPHONGBAN.Value, "&lt;br/&gt;", vbCrLf)</Value>
+                            <Style>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Left</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox20</rd:DefaultName>
+                    <Top>1.05498in</Top>
+                    <Left>0.0308in</Left>
+                    <Height>0.35497in</Height>
+                    <Width>3.16325in</Width>
+                    <ZIndex>1</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox36">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>sign</Value>
+                            <Style>
+                              <FontStyle>Normal</FontStyle>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Normal</FontWeight>
+                              <Color>White</Color>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox1</rd:DefaultName>
+                    <Top>0.49651in</Top>
+                    <Left>3.22183in</Left>
+                    <Height>0.2646in</Height>
+                    <Width>2.05821in</Width>
+                    <ZIndex>2</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox22">
+                    <CanGrow>true</CanGrow>
+                    <CanShrink>true</CanShrink>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Lời dặn: </Value>
+                            <Style>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                              <TextDecoration>None</TextDecoration>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Left</TextAlign>
+                        </Style>
+                      </Paragraph>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value xml:space="preserve"> </Value>
+                            <Style>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Normal</FontWeight>
+                              <TextDecoration>None</TextDecoration>
+                            </Style>
+                          </TextRun>
+                          <TextRun>
+                            <Value>=First(Fields!LOIDANCHOTOA_1.Value, "DataSet2")</Value>
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Normal</FontWeight>
+                              <TextDecoration>None</TextDecoration>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Left</TextAlign>
+                        </Style>
+                      </Paragraph>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value xml:space="preserve"> </Value>
+                            <Style>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Normal</FontWeight>
+                              <TextDecoration>None</TextDecoration>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Left</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox22</rd:DefaultName>
+                    <Top>0.01476in</Top>
+                    <Left>0.0308in</Left>
+                    <Height>0.76024in</Height>
+                    <Width>3.16325in</Width>
+                    <ZIndex>3</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Top</VerticalAlign>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox10">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>=Fields!BacSi.Value</Value>
+                            <Style>
+                              <FontStyle>Italic</FontStyle>
+                              <FontFamily>Times New Roman</FontFamily>
+                              <FontSize>9pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox10</rd:DefaultName>
+                    <Top>3.35164cm</Top>
+                    <Left>8.18345cm</Left>
+                    <Height>0.6cm</Height>
+                    <Width>5.18799cm</Width>
+                    <ZIndex>4</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </ReportItems>
+                <KeepTogether>true</KeepTogether>
+                <Top>7.0539cm</Top>
+                <Left>0.12706cm</Left>
+                <Height>4.06452cm</Height>
+                <Width>13.70312cm</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Rectangle>
+              <Textbox Name="Textbox18">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Chẩn đoán: </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!CHANDOANVAOKHOA.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox18</rd:DefaultName>
+                <Top>2.11731in</Top>
+                <Left>0.08974in</Left>
+                <Height>0.17023in</Height>
+                <Width>5.25235in</Width>
+                <ZIndex>2</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox16">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Số thẻ bảo hiểm y tế (nếu có): </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!SOTHE.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox16</rd:DefaultName>
+                <Top>1.71942in</Top>
+                <Left>0.08974in</Left>
+                <Height>0.17023in</Height>
+                <Width>3.69317in</Width>
+                <ZIndex>3</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox11">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Họ tên: </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!TENBENHNHAN.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox11</rd:DefaultName>
+                <Top>1.32226in</Top>
+                <Left>0.08974in</Left>
+                <Height>0.17023in</Height>
+                <Width>2.37586in</Width>
+                <ZIndex>4</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox35">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Tuổi: </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=iif(Fields!Tuoi.Value &gt; 6, Fields!Tuoi.Value, Fields!Thang.Value &amp; " Tháng")</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox35</rd:DefaultName>
+                <Top>1.32226in</Top>
+                <Left>2.478in</Left>
+                <Height>0.17023in</Height>
+                <Width>0.61915in</Width>
+                <ZIndex>5</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox5">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Ngày sinh:</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=First(Fields!NAMSINH.Value, "DataSet2")</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox5</rd:DefaultName>
+                <Top>3.35854cm</Top>
+                <Left>7.93734cm</Left>
+                <Height>0.43238cm</Height>
+                <Width>3.14449cm</Width>
+                <ZIndex>6</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox6">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Giới tính: </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!GioiTinh.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox6</rd:DefaultName>
+                <Top>3.35854cm</Top>
+                <Left>11.08185cm</Left>
+                <Height>0.43238cm</Height>
+                <Width>2.47671cm</Width>
+                <ZIndex>7</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox9">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>ĐƠN THUỐC BHYT</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>16pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox9</rd:DefaultName>
+                <Top>1.02794in</Top>
+                <Left>0.08082in</Left>
+                <Height>0.22702in</Height>
+                <Width>5.24877in</Width>
+                <ZIndex>8</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox17">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Họ tên Bố/Mẹ/Người giám hộ:</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!NGUOILIENHE.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox16</rd:DefaultName>
+                <Top>1.52141in</Top>
+                <Left>0.08974in</Left>
+                <Height>0.17023in</Height>
+                <Width>5.24866in</Width>
+                <ZIndex>9</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox12">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Cân nặng:</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!CANNANG.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox6</rd:DefaultName>
+                <Top>4.36733cm</Top>
+                <Left>9.67434cm</Left>
+                <Height>0.43238cm</Height>
+                <Width>3.89457cm</Width>
+                <ZIndex>10</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox15">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Địa chỉ: </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!DiaChi.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox14</rd:DefaultName>
+                <Top>1.91791in</Top>
+                <Left>0.08974in</Left>
+                <Height>0.17023in</Height>
+                <Width>5.25235in</Width>
+                <ZIndex>11</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox30">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!TENBENHVIEN.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>7.5pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Fields!DiaChiBenhVien.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>7pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve">
+</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>7.5pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>ĐT:</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>7.5pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>7.5pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!DienThoaiBenhVien.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>7.5pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Giờ làm việc: - Sáng:07:00-11:30;Chiều:12:30-16:00</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>7.5pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>                       - Chủ nhật: 07:00-12:00</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>7.5pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Mã đơn thuốc:</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>7.5pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>7.5pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=First(Fields!MATOATHUOCDAYCONG.Value, "DataSet2")</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>7.5pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox30</rd:DefaultName>
+                <Top>0.03476in</Top>
+                <Left>1.16442in</Left>
+                <Height>0.79565in</Height>
+                <Width>2.4539in</Width>
+                <ZIndex>12</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Image Name="Image1">
+                <Source>External</Source>
+                <Value>=Parameters!URL_LOGO.Value</Value>
+                <Sizing>Fit</Sizing>
+                <Top>0.2153cm</Top>
+                <Left>0.31978cm</Left>
+                <Height>0.36945in</Height>
+                <Width>0.4728in</Width>
+                <ZIndex>13</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Image>
+              <Image Name="Image2">
+                <Source>Database</Source>
+                <Value>=CodeGen128.Code128Rendering.MakeBarcodeImage(Fields!BARCODE.Value, 2300, 500, true, true)</Value>
+                <MIMEType>image/png</MIMEType>
+                <Sizing>Fit</Sizing>
+                <Top>0.03476in</Top>
+                <Left>3.77804in</Left>
+                <Height>0.40967in</Height>
+                <Width>1.64668in</Width>
+                <ZIndex>14</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>3pt</PaddingLeft>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Image>
+              <Textbox Name="Textbox4">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Lần khám: </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!SOLANKHAM.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> Mã toa: </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!STT.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>CK: </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!CK.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>STT: </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!SoTT_HoSo_BHYT.Value</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox4</rd:DefaultName>
+                <Top>1.25938cm</Top>
+                <Left>9.19054cm</Left>
+                <Height>1.06423cm</Height>
+                <Width>4.63964cm</Width>
+                <ZIndex>15</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Line Name="Line1">
+                <Top>2.45cm</Top>
+                <Left>0.18cm</Left>
+                <Height>0cm</Height>
+                <Width>13.38603cm</Width>
+                <ZIndex>16</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                  </Border>
+                </Style>
+              </Line>
+              <Textbox Name="Textbox7">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Để giảm thời gian chờ đợi khi đến Bệnh Viện. Quý khách nên đặt lịch khám trước 1-2 ngày qua số điện thoại: </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!SODIENTHOAI_BENHVIEN.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <Format>dd/MM/yyyy HH:mm:ss</Format>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> hoặc đăng ký trên website: </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!WEBSITE_BENHVIEN.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <Format>dd/MM/yyyy HH:mm:ss</Format>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Đề nghị ngưng sử dụng thuốc và báo ngay cho bác sỹ nếu có bất kỳ triệu chứng bất thường nào. </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Tái khám vui lòng mang theo đơn thuốc và kết quả xét nghiệm, X quang, Siêu âm...</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Ngày in: </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Day(Now())&amp;"/"&amp; Month(Now())&amp;"/"&amp; Year(Now()) &amp;"  "&amp; Format(now(),"HH:mm:ss")</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>8pt</FontSize>
+                          <Format>dd/MM/yyyy HH:mm:ss</Format>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox6</rd:DefaultName>
+                <Top>11.19956cm</Top>
+                <Left>0.20528cm</Left>
+                <Height>1.91719cm</Height>
+                <Width>13.6249cm</Width>
+                <ZIndex>17</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                </Style>
+              </Textbox>
+              <Image Name="Image3">
+                <Source>Embedded</Source>
+                <Value>QR_TraiNghiem</Value>
+                <Sizing>FitProportional</Sizing>
+                <Top>1.22426cm</Top>
+                <Left>0.31978cm</Left>
+                <Height>1.09935cm</Height>
+                <Width>1.20092cm</Width>
+                <ZIndex>18</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Image>
+              <Image Name="Image4">
+                <Source>Embedded</Source>
+                <Value>ID20240123_111651</Value>
+                <Sizing>FitProportional</Sizing>
+                <Top>2cm</Top>
+                <Left>1.55598cm</Left>
+                <Height>0.32361cm</Height>
+                <Width>0.41034cm</Width>
+                <ZIndex>19</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Image>
+              <Textbox Name="Textbox8">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Vui lòng quét QR code để chia sẻ trải nghiệm</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox8</rd:DefaultName>
+                <Top>2cm</Top>
+                <Left>1.96632cm</Left>
+                <Height>0.32361cm</Height>
+                <Width>5.95612cm</Width>
+                <ZIndex>20</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Top</VerticalAlign>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Height>13.11675cm</Height>
+            <Width>13.83018cm</Width>
+            <Visibility>
+              <Hidden>=IsNothing(First(Fields!MAYTE.Value, "DataSet2"))</Hidden>
+            </Visibility>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+        </ReportItems>
+        <Height>13.11675cm</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>13.83018cm</Width>
+      <Page>
+        <PageHeight>21cm</PageHeight>
+        <PageWidth>14.8cm</PageWidth>
+        <TopMargin>0.5cm</TopMargin>
+        <ColumnSpacing>1.27cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="TENBENHVIEN">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Tên bệnh viện</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TENPHIEU">
+      <DataType>String</DataType>
+      <Prompt>Tiêu đề</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="MABENHVIEN">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Ma Benh Vien</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SOYTE">
+      <DataType>String</DataType>
+      <Prompt>Sở y tế</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SOTIEPNHAN">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>SOTIEPNHAN</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SOKHAMBENH">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>SOKHAMBENH</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="URL_LOGO">
+      <DataType>String</DataType>
+      <Prompt>URL_LOGO</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="URL_BARCODE">
+      <DataType>String</DataType>
+      <Prompt>URL_BARCODE</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SOTOATHUOC">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>SOTOATHUOC</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LOAITOATHUOC">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>LOAITOATHUOC</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="STT">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SOLANKHAM">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="NGAYSINH">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CK">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LOIDANCHOTOA">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <EmbeddedImages>
+    <EmbeddedImage Name="Logo">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="QR_TraiNghiem">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="ID20240123_111651">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <CodeModules>
+    <CodeModule>CodeGen128, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</CodeModule>
+  </CodeModules>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>78580743-28a6-449b-a962-152e09f8f5cb</rd:ReportID>
+</Report>
